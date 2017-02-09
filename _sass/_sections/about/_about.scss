@@ -1,0 +1,148 @@
+#About {
+	.hero {
+		background-image: url('#{$img-path}group-pic.jpg');
+	}
+	.col-md-5 h2 {
+		margin-top: 20px;
+	}
+	.col-md-6 h2 {
+		margin-top: 35px;
+	}
+}
+
+.news {
+	border-top: 2px solid $gray-lighter;
+	padding-bottom: 50px;
+	> h2 {
+		padding-top: 40px;
+	}
+	h3 {
+		margin-top: 0;
+	}
+	+ p + ul {
+		padding-bottom: 15px;
+		padding-left: 5px;
+	}
+}
+
+@include responsive(screen-md) {
+
+	#About {
+		.col-md-6 h2 {
+			margin-top: 20px;
+		}
+	}
+
+}
+
+// Partners styling, taken from inline prob needs to be refactored
+
+.partner-form {
+	margin: 20px 0;
+	padding: 20px;
+	background-color: #ffffff;
+	border: 2px solid #ebebeb;
+	border-radius: 8px;
+}
+
+textarea {
+	height: 200px;
+	padding: 20px;
+}
+
+#first_name + .form-control-feedback {
+	top: 10px;
+}
+
+// Partners styling
+
+// Careers
+
+.careers {
+
+    .well {
+
+        &.white {
+            background: white;
+        }
+    }
+
+    #resumator-wrapper {
+
+		.resumator-jobs-text {
+			font-family: $open-sans !important;
+			font-size: $font-size-med;
+			line-height: 24px;
+            color: $text-color;
+
+			p {
+				font-family: $open-sans !important;
+				font-size: $font-size-med;
+				line-height: 24px;
+				color: $text-color;
+			}
+
+			ul {
+
+				li {
+					font-family: $open-sans !important;
+					font-size: $font-size-med;
+					line-height: 24px;
+					color: $text-color;
+				}
+			}
+
+			&.resumator-job-heading,
+			strong {
+				color: black;
+			}
+		}
+
+		.resumator-job-title {
+			font-size: $font-size-h4 !important;
+			font-family: $museo-700 !important;
+            color: $brand-primary;
+		}
+
+		.resumator-job-link {
+			text-decoration: underline;
+			color: #3399ef;
+
+			&:hover,
+			&:active,
+			&:focus {
+				color: darken(#3399ef, 10%);
+			}
+		}
+
+		ul {
+
+			li {
+				list-style-type: none !important;
+			}
+		}
+
+		.resumator-buttons {
+
+			ul {
+
+				li {
+					list-style-type: none !important;
+
+					&:before {
+						content: '';
+					}
+
+					input[type="button"] {
+						@extend .btn;
+                        @extend .btn-success;
+
+						&.resumator-forward-button {
+							@extend .btn-primary;
+						}
+					}
+				}
+			}
+		}
+    }
+}

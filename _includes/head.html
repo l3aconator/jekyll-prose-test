@@ -1,0 +1,61 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Google Tag Manager DataLayer-->
+    <script>
+    dataLayer = [];
+    </script>
+
+    <!-- Page hiding snippet (recommended) For Optimize (optimize is getting loaded with GTM)-->
+    <style>.async-hide {
+        opacity: 0 !important
+        } </style>
+        <script>
+        (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+        h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+    })(window,document.documentElement,'async-hide','dataLayer',2000,{'GTM-WJ3N':true});
+    </script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WJ3N');</script>
+
+    <!-- concussion center only -->
+    <script src="https://use.typekit.net/bba6qhu.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <!-- concussion center only -->
+
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+    <script src="/assets/js/css-modernizr.js"></script>
+
+    <link rel="Shortcut Icon" href="/favicon.ico">
+    <link rel="image_src" href="https://www.teamsnap.com/assets/img/teamsnap_logo.gif">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+    <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "Organization",
+        "name" : "TeamSnap",
+        "url" : "https://www.teamsnap.com",
+        "logo" : "https://www.teamsnap.com/assets/img/logo.png",
+        "sameAs" :["https://www.facebook.com/TeamSnap", "https://www.twitter.com/teamsnap", "https://plus.google.com/u/0/+Teamsnapapp", "https://www.pinterest.com/teamsnaphq", "https://www.youtube.com/user/TeamsnapHQ", "https://www.instagram.com/teamsnapapp"
+    ]
+    }
+    </script>
+
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include google-analytics.html %}
+    {% endif %}
+</head>

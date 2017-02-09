@@ -1,0 +1,48 @@
+#Mobile-Landing {
+	.icon-apple,
+	.icon-android,
+	.icon-windows {
+		font-size: 42px;
+	}
+	.hero {
+		.list-inline a {
+			font-size: 0;
+			color: transparent;
+			text-indent: -999px;
+			overflow: hidden;
+			opacity: .8;
+			transition: all .35s ease-in-out;
+			img {
+				max-width: 135px;
+			}
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+#iPhone-slider {
+	background: url('#{$img-path}iphone_black@2x.png') no-repeat center 0;
+	background-size: 300px 597px;
+	height: 597px;
+	width: 287px;
+	position: relative;
+	margin: 0 auto;
+	.carousel-inner {
+		position: absolute;
+		top: 82px;
+		left: 21px;
+		width: 248px;
+	}
+}
+
+#mobile-content {
+	.list-inline li:first-child {
+		border-right: 1px solid #ddd;
+		padding-right: 20px;
+		+ li {
+			padding-left: 15px;
+		}
+	}
+}

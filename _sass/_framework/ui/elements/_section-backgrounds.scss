@@ -1,0 +1,270 @@
+.bg-primary {
+	// Given the contrast here, this is the only class to have its color inverted
+	// automatically.
+	color: #fff;
+}
+
+@include bg-variant('.bg-primary', $brand-primary);
+
+@include bg-variant('.bg-success', $state-success-bg);
+
+@include bg-variant('.bg-info', $state-info-bg);
+
+@include bg-variant('.bg-warning', $state-warning-bg);
+
+@include bg-variant('.bg-danger', $state-danger-bg);
+
+.bg-info {
+	h3, h4 {
+		color: $brand-primary;
+	}
+}
+
+#page .bg-info,
+#content {
+  background-image: url('#{$img-path}groovepaper.png');
+  border-top: 1px solid darken($gray-lighter, 1%);
+  border-bottom: 1px solid darken($gray-lighter, 1%);
+}
+
+.bg-primary {
+	background: $brand-primary;
+	h1, h2, h3, h4, h5, h6, p {
+		color: #fff;
+	}
+	a {
+		color: $gray-lighter;
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	&.cta {
+		@include gradient($brand-primary, darken($brand-primary, 3%));
+		border-top: 1px solid rgba(255, 255, 255, .25);
+	}
+}
+
+header.bg-primary {
+	.container {
+		padding: 0;
+	}
+}
+
+.bg-primary-dark {
+	background-color: $brand-primary-dark;
+	h1, h2, h3, h4, h5, h6, p {
+		color: #fff;
+	}
+	&.gradient,
+	&.cta {
+		@include gradient(lighten($brand-primary-dark, 3%), $brand-primary-dark);
+	}
+}
+
+.bg-success {
+	background-color: $brand-success;
+	h1, h2, h3, h4, h5, h6, p {
+		color: #fff;
+	}
+	&.gradient,
+	&.cta {
+		@include gradient(lighten($brand-success, 3%), $brand-success);
+	}
+}
+
+.bg-primary-dark *,
+.bg-primary * {
+	color: #fff;
+}
+
+section,
+div {
+	&.bg-soft-gradient {
+		border-top: 1px solid $gray-lighter;
+		border-bottom: 1px solid $gray-lighter;
+		@include gradient(rgb(213, 228, 237), rgb(237, 240, 238));
+	}
+}
+
+section,
+div,
+header {
+  &.hero {
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    background-color: #4c9ee8;
+    background-image: url('#{$img-path}blue-people.jpg');
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    * {
+      color: #fff;
+    }
+    h1, h2, h3 {
+      text-shadow: 0 -1px 0 darken($brand-primary-dark, 1.25);
+    }
+    h4, h5, h6, p {
+      text-shadow: 0 -1px 0 rgba($brand-primary-dark, .75);
+    }
+    & > *:last-child {
+      padding-bottom: 50px;
+    }
+    &.about {
+       background-image: url('#{$img-path}about-bg.jpg');
+    }
+    .hero-image {
+      position: absolute;
+      max-width: 150%;
+      min-width: 100%;
+      top: 0;
+      left: 0;
+      &.right {
+        right: 0;
+      }
+      &.left {
+        left: 0;
+      }
+      &.bottom {
+        bottom: 0;
+      }
+      &.top {
+        top: 0;
+      }
+    }
+    &.podcast-bg {
+      background-image: url('#{$img-path}podcast-bg.jpg');
+      background-position: right center;
+    }
+  }
+}
+
+section,
+div,
+article {
+  &.bg-image-fluid {
+    background-image: url('#{$img-path}field.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    .screen-bg {
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+      border: 1px solid rgba(#fff, .25);
+      border-bottom: none;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      @include gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0));
+    }
+  }
+}
+
+section.bg-info {
+	border-top: 1px solid darken($brand-info, 1%);
+	border-bottom: 1px solid darken($brand-info, 1%);
+	.hero-image {
+		margin-bottom: 0px - $grid-gutter-width;
+	}
+}
+
+.bg-primary-dark.cta {
+   .pull-right {
+     float: none !important;
+   }
+   div[class^='col'] {
+     text-align: center;
+     h2, h3 {
+       text-align: center;
+     }
+     .btn {
+       text-align: center !important;
+     }
+   }
+   div.col-md-8 {
+     padding-bottom: 15px
+   }
+   h2 {
+     font-size: 28px;
+   }
+   h3 {
+     font-size: 24px;
+   }
+}
+
+.authors,
+.podcast-author {
+	@include gradient(#f6f6f6, #fafafa);
+	border-radius: 5px;
+	border: 1px solid #eee;
+	padding: 15px;
+	box-shadow: 1px 1px 1px #eee inset;
+	.img-thumbnail {
+		padding: 0;
+		background: none;
+		border-radius: 5px;
+		float: left;
+		border: none;
+		box-shadow: none;
+	}
+	.img-thumbnail + p {
+		margin-left: 100px;
+		padding-left: 15px;
+		border-left: 1px solid #ddd;
+		margin-bottom: 0;
+	}
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+.podcast-author .img-thumbnail {
+	float: none;
+}
+
+@include responsive(screen-sm) {
+
+	.bg-primary-dark.cta {
+		[class^='col-sm'] .pull-right {
+			float: right !important;
+		}
+		div[class^='col-sm'] {
+			text-align: left;
+			h2, h3 {
+				text-align: left;
+			}
+		}
+	}
+
+}
+
+@include responsive(screen-md) {
+
+	.bg-primary-dark.cta {
+		[class^='col-md'] .pull-right {
+			float: right !important;
+		}
+		div[class^='col-md'] {
+			text-align: left;
+			h2, h3 {
+				text-align: left;
+			}
+		}
+		div.col-md-8 {
+			padding-bottom: 15px
+		}
+	}
+
+	section,
+	header,
+	div {
+		.hero {
+			min-height: 360px;
+		}
+
+	}
+
+}

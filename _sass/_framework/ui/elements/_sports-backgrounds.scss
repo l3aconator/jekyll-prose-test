@@ -1,0 +1,232 @@
+section,
+div,
+article {
+	&.bg-image-fluid {
+		//defualt
+		background-image: url('#{$img-path}field.jpg');
+		&.Baseball {
+			background-image: url('#{$img-path}baseball.jpg');
+		}	
+		&.Baseball2 {
+			background-image: url('#{$img-path}baseball2.jpg');
+		}
+		&.Basketball {
+			background-image: url('#{$img-path}basketball.jpg');
+		}
+		&.Football {
+			background-image: url('#{$img-path}football2.jpg');
+		}
+		&.Bowling {
+			background-image: url('#{$img-path}bowling.jpg');
+		}
+		&.Cheerleading {
+			background-image: url('#{$img-path}cheer-leading.jpg');
+		}
+		&.Cricket {
+			background-image: url('#{$img-path}cricket.jpg');
+		} 
+		&.Cross-Country.Skiing {
+			background-image: url('#{$img-path}cross-country-ski.jpg');
+		} 
+		&.Cycling {
+			background-image: url('#{$img-path}cycling.jpg');
+		} 
+		&.Dodgeball {
+			background-image: url('#{$img-path}dodge-ball.jpg');
+		} 
+		&.Downhill.Skiing {
+			background-image: url('#{$img-path}downhill-ski.jpg');
+		} 
+		&.Dragon.Boat.Racing {
+			background-image: url('#{$img-path}dragon-boat-racing.jpg');
+		} 
+		&.Field.Hockey {
+			background-image: url('#{$img-path}field-hockey.jpg');
+		}
+		&.Gymnastics { 
+			background-image: url('#{$img-path}gymnastics.jpg');
+		}
+		&.Ice.Hockey,
+		&.Hockey { 
+			background-image: url('#{$img-path}ice-hockey.jpg');
+		}
+		&.Indoor.Soccer { 
+			background-image: url('#{$img-path}soccer.jpg');
+		}
+		&.Inline.Hockey { 
+			background-image: url('#{$img-path}inline-hockey.jpg');
+		}
+		&.play.on { 
+			background-image: url('#{$img-path}field.jpg');
+		}
+		&.Kickball { 
+			background-image: url('#{$img-path}kickball.jpg');
+		}
+		&.Lacrosse { 
+			background-image: url('#{$img-path}lacrosse.jpg');
+		}
+		&.Outrigger { 
+			background-image: url('#{$img-path}outrigger.jpg');
+		}
+		&.Paintball {
+			background-image: url('#{$img-path}paintball.jpg');
+		}
+		&.Polo { 
+			background-image: url('#{$img-path}polo.jpg');
+		}
+		&.Ringette { 
+			background-image: url('#{$img-path}ringette.jpg');
+		}
+		&.Roller.Derby { 
+			background-image: url('#{$img-path}roller-skates.jpg');
+		}
+		&.Rowing { 
+			background-image: url('#{$img-path}rowing.jpg');
+		}
+		&.Rugby { 
+			background-image: url('#{$img-path}rugby.jpg');
+		}
+		&.Running { 
+			background-image: url('#{$img-path}running.jpg');
+		}
+		&.Sailing { 
+			background-image: url('#{$img-path}sailing.jpg');
+		}
+		&.Soccer { 
+			background-image: url('#{$img-path}soccer.jpg');
+		}
+		&.Soccer2 { 
+			background-image: url('#{$img-path}soccer2.jpg');
+		}
+		&.play-on{ 
+			background-image: url('#{$img-path}soccer.jpg');
+		}
+		&.Softball { 
+			background-image: url('#{$img-path}softball.jpg');
+		}
+		&.Swimming { 
+			background-image: url('#{$img-path}swimming.jpg');
+		}
+		&.Tee.Ball {
+			background-image: url('#{$img-path}tee-ball.jpg');
+		}
+		&.Tennis { 
+			background-image: url('#{$img-path}tennis.jpg');
+		}
+		&.Ultimate { 
+			background-image: url('#{$img-path}ultimate-frisbee.jpg');
+		}
+		&.Volleyball { 
+			background-image: url('#{$img-path}volleyball.jpg');
+		}
+		&.Water.Polo { 
+			background-image: url('#{$img-path}water-polo.jpg');
+		}
+		&.Wrestling {
+			background-image: url('#{$img-path}wrestling.jpg');
+		}
+		//second group
+		&.Alumni.Groups { 
+			background-image: url('#{$img-path}alumni-groups.jpg');
+		}
+		&.Associations { 
+			background-image: url('#{$img-path}association.jpg');
+		}
+		&.Babysitting.Co-ops { 
+			background-image: url('#{$img-path}babysitting.jpg');
+		}
+		&.Bands { 
+			background-image: url('#{$img-path}bands.jpg');
+		}
+		&.Book.Clubs,
+		&.Book.Clubs { 
+			background-image: url('#{$img-path}book-club.jpg');
+		}
+		&.Camps { 
+			background-image: url('#{$img-path}camps.jpg');
+		}
+		&.Church.Groups { 
+			background-image: url('#{$img-path}book-club.jpg');
+		}
+		&.Clubs { 
+			background-image: url('#{$img-path}book-club.jpg');
+		}
+		&.Corporate.Teams { 
+			background-image: url('#{$img-path}association.jpg');
+		}
+		&.Dance.Companies { 
+			background-image: url('#{$img-path}dance-company.jpg');
+		}
+		&.Families { 
+			background-image: url('#{$img-path}families.jpg');
+		}
+		&.Fraternaties { 
+			background-image: url('#{$img-path}frat-sor.jpg');
+		}
+		&.Friends { 
+			background-image: url('#{$img-path}friends3.jpg');
+		}
+		&.Gaming.Clans,
+		&.Gaming.Clans { 
+			background-image: url('#{$img-path}video-games.jpg');
+		}
+		&.Parties { 
+			background-image: url('#{$img-path}party2.jpg');
+		}
+		&.Schools.Classes.Scouting,
+		&.Schools.Classes { 
+			background-image: url('#{$img-path}schools.jpg');
+		}
+		&.Sororities { 
+			background-image: url('#{$img-path}frat-sor.jpg');
+		}
+		&.Scouting {
+			background-image: url('#{$img-path}scouts.jpg');
+		}	
+		&.Yodeling.Clowns {
+			background-image: url('#{$img-path}clown.jpg');
+		}
+		// third group
+		&.Bathtub.Racing {
+			background-image: url('#{$img-path}bathtub.jpg');
+		}
+		&.Bog-Snorkelling,
+		&.Bog.Snorkelling {
+			background-image: url('#{$img-path}bog-snorkelling.jpg');
+		}
+		&.Camel.Wrestling {
+			background-image: url('#{$img-path}camel.jpg');
+		}
+		&.Cheese.Rolling,
+		&.Cheese.Rolling {
+			background-image: url('#{$img-path}cheese-rolling.jpg');
+		}
+		&.Cockroach.Racing,
+		&.Cockroach.Racing {
+			background-image: url('#{$img-path}cockroach-racing.jpg');
+		}
+		&.Fruitcake.Tossing,
+		&.Fruitcake.Tossing {
+			background-image: url('#{$img-path}fruit-cake.jpg');
+		}
+		&.Lawnmower-Racing {
+			background-image: url('#{$img-path}lawnmower.jpg');
+		}
+		&.Pillow.Fighting,
+		&.Pillow.Fighting {
+			background-image: url('#{$img-path}pillow-fight.jpg');
+		}
+		&.Robot.Soccer {
+			background-image: url('#{$img-path}robot.jpg');
+		}
+		&.Rock.Paper.Scissors {
+			background-image: url('#{$img-path}rock-paper-scissors.jpg');
+		}
+		&.Santa.Run {
+			background-image: url('#{$img-path}santa-run.jpg');
+		}
+		&.Wife.Carrying {
+			background-image: url('#{$img-path}wife-carry.jpg');
+		}
+	}
+}

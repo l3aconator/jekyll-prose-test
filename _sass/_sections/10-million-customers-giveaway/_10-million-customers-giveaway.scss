@@ -1,0 +1,202 @@
+/* --------------- Section - Hero Content --------------- */
+  #hero-image {
+    background: url('#{$img-path}Hero_ex-large_03.png') top center no-repeat;
+    background-size: auto;
+  }
+
+.hero-height {
+	padding-top: 600px;
+}
+
+.hero-size {
+	width: 100%;
+	text-align: center;
+}
+
+/* --------------- End - Hero Content --------------- */
+
+/* --------------- Section - Body Copy --------------- */
+
+.million-bodytext {
+	padding-bottom: 60px;
+	text-align: left;
+}
+
+.million-bodytext h3 {
+	font-family: "MuseoSansRounded700Regular", sans-serif;
+	font-size: 34px;
+	color: #1269b1;
+}
+
+.million-bodytext h4 {
+	font-family: "MuseoSansRounded700Regular", sans-serif;
+	font-size: 24px;
+	color: #1269b1;
+}
+
+.million-bodytext p {
+	font-family: "MuseoSansRounded300Regular", sans-serif;
+	font-size: 18px;
+	color: #404040;
+}
+
+/* --------------- End - Body Copy --------------- */
+
+/* --------------- End - Bullet Styles --------------- */
+
+/* --------------- Section - Form --------------- */
+
+  .million-formbkgd {
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 0 3px #333;
+    background-image: url('#{$img-path}Form-Hero_01.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px;
+  }
+
+.million-form {
+	padding: 15px 5% 40px 5%;
+	width: 100%;
+}
+
+/* --------------- End - Form --------------- */
+
+/* --------------- MISC --------------- */
+
+.padding20 {
+	padding: 0px 20px;
+}
+
+.MT0 {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.bold {
+	font-family: "MuseoSansRounded700Regular", sans-serif;
+	font-weight: 700;
+}
+
+.vcenter {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
+/* --------------- End - MISC --------------- */
+
+/* --------------- Section - CTA --------------- */
+
+  .million-CTAbkgd {
+    background-image: url('#{$img-path}CTA-Bkgd.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+/* --------------- Background --------------- */
+
+  #million-bkgd {
+    background-image: url('#{$img-path}Bkgd_texture_01.jpg');
+    background-repeat: repeat;
+  }
+
+#million-container {
+	max-width: 1800px;
+	margin: auto;
+	-webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.75);
+}
+
+  .million-contentbkgd {
+    background-image: url('#{$img-path}groovepaper4.png');
+    background-repeat: repeat;
+    background-position: top center;
+  }
+
+/* --------------- End Background --------------- */
+
+/* --------------- Media Query --------------- */
+
+@media screen and (min-width: 768px) {
+	.hidden-sm-up {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.p5per {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.p5px {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.million-formbkgd {
+		margin: 0px;
+	}
+	.hidden-sm-down {
+		display: none;
+	}
+
+	/* -- Section - CTA -- */
+	.moble-center {
+		text-align: center !important;
+		margin: auto !important;
+	}
+	/* -- background -- */
+	.million-herobkgd {
+		background-size: 1570px;
+	}
+}
+
+@media screen and (min-width: 681px) {
+	.hidden-680-up {
+		display: none;
+	}
+}
+
+  @media screen and (max-width: 680px) {
+    #hero-image {
+      background-image: url('#{$img-path}Hero_Small_03.png');
+      background-size: contain;
+    }
+    .hero-height {
+      padding-top: 0px;
+      margin-top: -64%;
+    }
+    .hidden-680-down {
+      display: none;
+    }
+    /* -- Section - Hero Content -- */
+    .million-herotext h3 {
+        font-size: 24px;
+        padding-bottom: 110px;
+        text-align: center;
+     }
+     .million-herotext p {
+        font-size: 18px;
+     }
+
+	/* -- background -- */
+	.million-herobkgd {
+		background-size: 1500px;
+	}
+	/* -- Section - Body Copy -- */
+	.million-bodytext p {
+		font-size: 16px;
+	}
+	.million-bodytext h3 {
+		font-size: 28px;
+	}
+	.million-bodytext h4 {
+		font-size: 20px;
+	}
+}

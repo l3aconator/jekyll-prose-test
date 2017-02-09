@@ -1,0 +1,947 @@
+/* CSS Document */
+
+/* --------------- Section - Hero Content --------------- */
+
+.concussion-center-two { // Add namespace wrap
+
+	.UGh1top {
+		font-family: "MuseoSansRounded100Regular", sans-serif;
+		font-weight: 100;
+		color: #ffffff;
+		font-size: 16px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		margin: 0px;
+	}
+
+	.UGh1middle {
+		font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial;
+		font-weight: 900;
+		color: #ffffff;
+		font-size: 76px;
+		line-height: 0.8;
+	}
+
+	.UGh1bottom {
+		font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial;
+		font-weight: 300;
+		color: rgba(255, 255, 255, 0.4);
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 21px;
+		position: absolute;
+	}
+
+	.UGherobkgd {
+		position: absolute;
+		width: 100%;
+		height: 380px;
+		border-bottom: solid 5px #3399ef;
+		z-index: -1000;
+		overflow: hidden;
+	}
+}
+
+.concussion-center-two { // Add namespace wrap
+
+	/* Concussion Hero Text */
+	#concussionsherobkgd {
+		background-color: #1d3447;
+		background-image: url('https://www.teamsnap.com/assets/images/content/Hero_Bkgd_01.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	#concussionshero {
+		background-color: #1d3447;
+		background-image: url('https://www.teamsnap.com/assets/images/content/Podcast-concussion-hero.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.concussionshero-half {
+		float: left;
+		width: 50%
+	}
+
+	.concussionshero-height {
+		display: table;
+		table-layout: fixed;
+		height: 310px;
+		width: 100%;
+		padding-bottom: 10%;
+	}
+
+	#concussion-pod-title {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
+
+.concussion-center-two { // Add namespace wrap
+
+	/* Podcast Player */
+	.visually-hidden, .pcast-player button span {
+		position: absolute !important;
+		clip: rect(1px 1px 1px 1px);
+		/* IE6, IE7 */
+		clip: rect(1px, 1px, 1px, 1px);
+		padding: 0 !important;
+		border: 0 !important;
+		height: 1px !important;
+		width: 1px !important;
+		overflow: hidden;
+	}
+}
+
+.concussion-center-two { // Add namespace wrap
+
+	/* Pcast Player */
+	.mini-play {
+		background-image: url('https://www.teamsnap.com/assets/images/content/podcast-action-03.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	.mini-rev {
+		background-image: url('https://www.teamsnap.com/assets/images/content/podcast-action-01.svg');
+		background-repeat: no-repeat;
+		padding: 2px;
+	}
+
+	.mini-fow {
+		background-image: url('https://www.teamsnap.com/assets/images/content/podcast-action-02.svg');
+		background-repeat: no-repeat;
+		padding: 2px;
+	}
+
+	.mini-pause {
+		background-image: url('https://www.teamsnap.com/assets/images/content/podcast-action-04.svg');
+		background-repeat: no-repeat;
+		padding: 2px;
+	}
+
+	.pcast-plpua {
+		position: absolute;
+		top: 0;
+		text-align: center;
+		width: 100%;
+		border: none;
+		padding: 0px !important;
+		margin: 0px;
+		height: calc(100% - 20px);
+	}
+
+	.pcast-rewind {
+		float: left;
+		height: 20px;
+		width: 10%;
+		border: none;
+		padding: 0px !important;
+		margin: 0px;
+	}
+
+	.pcast-speed {
+		float: right;
+		height: 20px;
+		width: 10%;
+		border: none;
+		padding: 0px !important;
+		margin: 0px;
+	}
+
+	.pcast-progress {
+		width: 100%;
+	}
+
+	.pcast-player .pcast-player-controls {
+		box-sizing: border-box;
+		color: #fff;
+		font-size: 12px;
+		height: 20px;
+		overflow: hidden;
+	}
+
+	.pcast-player button {
+		color: #fff;
+		background-color: rgba(0, 0, 0, 0.0);
+		padding: 5px;
+		line-height: 20px;
+		-webkit-appreance: none;
+		min-width: 32px;
+	}
+
+	.pcast-player progress {
+		height: 20px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+
+	.pcast-player progress[value]::-webkit-progress-bar {
+		background-color: rgba(0, 0, 0, 0.10);
+		border-radius: 0;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+	}
+
+	.pcast-player .pcast-time {
+		z-index: 1;
+		position: absolute;
+		font-size: 10px;
+		padding: 0 5px;
+		text-align: center;
+		width: 10%;
+		line-height: 20px;
+	}
+
+	.unselectable {
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+}
+
+.concussion-center-two { // Add namespace wrap
+
+	/* What is a Concussion */
+	#concussion-whatis {
+
+		h2 {
+			font-size: 40px;
+			color: #ff8f00;
+			font-family: "museo-slab", "MuseoSansRounded700Regular", "Open Sans", sans-serif;
+			font-weight: 700;
+		}
+
+		p {
+		   font-size: 16px;
+	   }
+	}
+
+	#concussion-questionmark {
+		background-image: url('https://www.teamsnap.com/assets/images/content/Questionmark.png');
+		background-repeat: no-repeat;
+		width: 100%;
+		max-width: 186px;
+	}
+}
+
+.concussion-center-two { // Add namespace wrap
+
+	/* Concussion Symptoms */
+	#concussion-symptoms {
+		background-color: #fbfcfe;
+		border-top: solid 1px #e8e4e3;
+		border-bottom: solid 1px #e8e4e3;
+
+        h2 {
+    		font-size: 24px;
+    		color: #1269b1;
+    		font-family: "museo-slab", "MuseoSansRounded700Regular", "Open Sans", sans-serif;
+    		font-weight: 700;
+    	}
+
+        ul li {
+    		background-image: url('https://www.teamsnap.com/assets/images/content/ExMark-01.svg');
+    		background-repeat: no-repeat;
+    		background-size: 6px;
+    		background-position: 24px 6px;
+    		font-size: 22px;
+    		color: #1d3447;
+    		font-weight: 700;
+    		line-height: 1.3em;
+    		padding-left: 45px;
+
+            &:before {
+                content: '';
+            }
+    	}
+	}
+
+	#concussion-video {
+		width: auto;
+		height: auto;
+		position: absolute;
+		padding: 30px 2.5% 20px 2.5%;
+	}
+
+	.video-container {
+		position: relative;
+		padding-bottom: 49%;
+		padding-top: 30px;
+		height: 0;
+		overflow: hidden;
+	}
+
+	.video-container iframe,
+	.video-container object,
+	.video-container embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.concussion-center-two { // Add namespace wrap
+
+	/* Concussion treatment */
+	#concussion-treatment {
+
+		h2 {
+			font-size: 24px;
+			color: #1269b1;
+			font-family: "museo-slab", "MuseoSansRounded700Regular", "Open Sans", sans-serif;
+			font-weight: 700;
+		}
+	}
+}
+
+.concussion-center-two { // Add namespace wrap
+	/* Concussion Prevention Tips */
+	#concussion-preventiontitle {
+		background-color: #ff8f00;
+		border-radius: 30px 30px 0 0;
+		margin-bottom: 0px;
+		padding: 15px;
+
+		h2 {
+			font-size: 2.125em;
+			color: #fff;
+			font-family: "museo-slab", "MuseoSansRounded700Regular", "Open Sans", sans-serif;
+			font-weight: 700;
+		}
+	}
+
+	#concussion-preventionlist {
+		padding: 20px;
+		margin-top: 0px;
+		border: solid 3px #ff8f00;
+		border-top: none;
+		border-radius: 0 0 30px 30px;
+
+		ul {
+			padding: 15px 5% 0 5%;
+
+			li {
+				background: url('https://www.teamsnap.com/assets/images/content/Check.png') no-repeat 0 6px;
+				background-size: 40px;
+				font-family: "museo-slab", "MuseoSansRounded500Regular", "Open Sans", sans-serif;
+				font-weight: 500;
+				font-size: 30px;
+				color: #ff8f00;
+				line-height: 1.7em;
+				padding-left: 55px;
+
+				&:before {
+					content: '';
+				}
+			}
+		}
+	}
+}
+
+.concussion-center-two { // Add namespace wrap
+
+	/* Concussion Fun Facts */
+	#concussion-funfacts {
+
+		h3 {
+			color: #f2f2eb;
+			font-size: 24px;
+			font-family: "museo-slab", "MuseoSansRounded500Regular", "Open Sans", sans-serif;
+			font-weight: 500;
+		}
+
+		p {
+			color: #f2f2eb;
+			font-family: "Open Sans", "MuseoSansRounded300Regular", sans-serif;
+			font-size: 14px;
+			font-style: italic;
+		}
+	}
+
+	#concussion-funfacts-title {
+		height: 173px;
+		vertical-align: middle;
+		display: table-cell;
+	}
+}
+
+.concussion-center-two { // Add namespace wrap
+
+	/* Concussion Don't Only Happen To Football Players */
+	#bkgd-soccer {
+		background-image: url(https://www.teamsnap.com/assets/images/content/Soccer-Intense-Tackle.jpg);
+		background-color: #ff8f00;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	#concussion-soccer {
+		padding: 30px 20px 30px 90px;
+
+		h3 {
+			color: #000;
+			font-size: 24px;
+			font-family: "museo-slab", "MuseoSansRounded700Regular", "Open Sans", sans-serif;
+			font-weight: 500;
+		}
+
+		p {
+			color: #000;
+			font-size: 14px;
+			font-style: italic;
+		}
+	}
+
+	#concussion-arrowright {
+		background-image: url('https://www.teamsnap.com/assets/images/content/Arrow-01.svg');
+		background-repeat: no-repeat;
+		background-size: 70px;
+		background-position: left center;
+		margin-left: -35px;
+	}
+
+	/* Related Content */
+	.concussion-masonry-block-half {
+		width: 50% !important;
+	}
+
+	.concussion-masonry-block-full {
+		width: 100% !important;
+	}
+
+	.concussion-masonry-block-quarter {
+		width: 25% !important;
+	}
+}
+
+.concussion-center-two { // Add namespace wrap
+
+	/* --------------- Section - Body Copy --------------- */
+	.UGcontentarea {
+		background-color: #ffffff;
+		border-radius: 5px;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	}
+
+	.read-more {
+		color: #444C54;
+		font-size: 12px;
+		font-style: italic;
+	}
+
+	.glyphicon-circle-arrow-right {
+		padding-right: 5px;
+		font-size: 13px;
+		margin-top: 1px;
+		color: #f5950d;
+	}
+
+	.UGpara2 p {
+		font-family: "MuseoSansRounded300Regular", sans-serif;
+		font-size: 18px;
+		color: #1d3447;
+		line-height: 1.6;
+	}
+
+	.UGlink-block {
+		padding-top: 15px;
+	}
+
+	.UGlink-block img {
+		max-width: 85px;
+	}
+
+	.UGlink-block a {
+		font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial;
+		font-size: 14px;
+		font-weight: 700;
+	}
+
+	.UGlink-block p {
+		font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial;
+		font-size: 12px;
+		color: #778591;
+		margin-bottom: 0px;
+	}
+
+	.UGhero-listen img {
+		display: block;
+		padding-top: 25%;
+		margin: auto;
+		width: 85px;
+	}
+
+	.UGhero-title {
+		display: table-cell;
+		width: 100%;
+		bottom: 0;
+		text-align: center;
+	}
+
+	.UGhero-text {
+		color: #fff;
+		font-size: 12px;
+		text-shadow: 0 0 5px #333;
+	}
+
+	.bkgd-darkblue {
+		background-color: #1d3447;
+	}
+}
+
+.concussion-center-two { // Add namespace wrap
+	/* --------------- MISC --------------- */
+	.padding20 {
+		padding: 0px 20px;
+	}
+
+	.MT0 {
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+
+	.bold {
+		font-family: "MuseoSansRounded700Regular", sans-serif;;
+		font-weight: 700;
+	}
+
+	a {
+		color: #3399ef;
+	}
+
+	.vcenter {
+		display: inline-block;
+		vertical-align: middle;
+		float: none;
+	}
+
+	.pl2per {
+		padding-left: 2.5%;
+	}
+
+	.pr2per {
+		padding-right: 2.5%;
+	}
+
+	.text-darkblue {
+		color: #1d3447
+	}
+}
+
+/* --------------- Background --------------- */
+.concussion-center-two-bg {
+    background-image: url("#{$img-path}groovepaper.png");
+    background-repeat:repeat;
+    background-position:top center;
+}
+
+.concussion-center-two { // Add namespace wrap
+
+	/* content styles */
+	.inside {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.inside-full-height {
+		/*
+		// if you want to give content full height give him height: 100%;
+		// with content full height you cant apply margins to the content
+		// content full height does not work in ie http://stackoverflow.com/questions/27384433/ie-display-table-cell-child-ignores-height-100
+		*/
+		height: 100%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.content {
+		padding: 12px 3px;
+	}
+
+	/* columns of same height styles */
+
+	.row-height {
+		display: table;
+		table-layout: fixed;
+		height: 100%;
+		width: 100%;
+	}
+
+	.col-height {
+		display: table-cell;
+		float: none;
+		height: 100%;
+	}
+
+	.col-top {
+		vertical-align: top;
+	}
+
+	.col-middle {
+		vertical-align: middle;
+	}
+
+	.col-bottom {
+		vertical-align: bottom;
+	}
+}
+
+/* --------------- Media Query --------------- */
+
+@media (min-width: 1200px) {
+
+	.concussion-center-two { // Add namespace wrap
+
+		.row-lg-height {
+			display: table;
+			table-layout: fixed;
+			height: 100%;
+			width: 100%;
+		}
+
+		.col-lg-height {
+			display: table-cell;
+			float: none;
+			height: 100%;
+		}
+
+		.col-lg-top {
+			vertical-align: top;
+		}
+
+		.col-lg-middle {
+			vertical-align: middle;
+		}
+
+		.col-lg-bottom {
+			vertical-align: bottom;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+
+	.concussion-center-two { // Add namespace wrap
+
+		.hidden-992-up {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+
+	.concussion-center-two { // Add namespace wrap
+
+		.hidden-992-down {
+			display: none;
+		}
+
+		#concussion-funfacts-title {
+			height: 100%;
+			padding-top: 20px;
+		}
+
+		#concussion-funfacts-pt {
+			padding-top: 5px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.concussion-center-two { // Add namespace wrap
+
+		.hidden-sm-up {
+			display: none;
+		}
+
+		.round-corner-tl {
+			border-radius: 5px 0 0 0;
+		}
+
+		.row-md-height {
+			display: table;
+			table-layout: fixed;
+			height: 100%;
+			width: 100%;
+		}
+
+		.col-md-height {
+			display: table-cell;
+			float: none;
+			height: 100%;
+		}
+
+		.col-md-top {
+			vertical-align: top;
+		}
+
+		.col-md-middle {
+			vertical-align: middle;
+		}
+
+		.col-md-bottom {
+			vertical-align: bottom;
+		}
+
+		.row-sm-height {
+			display: table;
+			table-layout: fixed;
+			height: 100%;
+			width: 100%;
+		}
+
+		.col-sm-height {
+			display: table-cell;
+			float: none;
+			height: 100%;
+		}
+
+		.col-sm-top {
+			vertical-align: top;
+		}
+
+		.col-sm-middle {
+			vertical-align: middle;
+		}
+
+		.col-sm-bottom {
+			vertical-align: bottom;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.concussion-center-two { // Add namespace wrap
+
+		.hidden-sm-down {
+			display: none;
+		}
+
+		.container-mobile {
+			padding: 0px !important;
+		}
+
+		.UGpara2 {
+			padding-left: 0;
+		}
+
+		/* -- Section - Hero Content -- */
+
+		.UGh1top {
+			color: #1d3447;
+		}
+
+		.UGh1middle {
+			color: #1d3447;
+		}
+
+		.UGh1bottom {
+			color: #1d3447;
+		}
+
+		.UG-masonry-title {
+			font-size: 18px !important;
+		}
+
+		#concussion-arrowright {
+			background-image: url('https://www.teamsnap.com/assets/images/content/Arrow-02.svg');
+			background-size: 70px;
+			background-position: center top;
+			margin-left: 0px;
+			margin-top: -35px;
+		}
+
+		#concussion-soccer {
+			text-align: left;
+			padding: 80px 15px 20px 15px;
+		}
+
+		#concussion-video {
+			position: relative;
+			padding: 20px 0 0 0;
+		}
+
+		.concussion-masonry-block-half {
+			width: 100% !important;
+		}
+
+		.concussion-masonry-block-quarter {
+			width: 100% !important;
+		}
+
+		.concussion-masonry-img {
+			height: 300px !important;
+		}
+
+		.mpl0 {
+			padding-left: 0px
+		}
+
+		.mpr0 {
+			padding-right: 0px
+		}
+	}
+}
+
+#what-is-ts {
+	
+	.btn {
+		color: white;
+	}
+}
+
+@media screen and (min-width: 681px) {
+
+	.concussion-center-two { // Add namespace wrap
+
+		.hidden-680-up {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+
+	.concussion-center-two { // Add namespace wrap
+
+		.hidden-680-down {
+			display: none;
+		}
+
+		/* -- Section - Hero Content -- */
+		.UGh1middle {
+			font-size: 50px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.concussion-center-two { // Add namespace wrap
+
+		/* -- Section - Hero Content -- */
+		.UGh1top {
+			font-size: 16px;
+			letter-spacing: 2px;
+		}
+
+		.UGh1middle {
+			font-size: 38px;
+		}
+
+		.UGh1bottom {
+			letter-spacing: 2px;
+			font-size: 17px;
+			position: absolute;
+		}
+
+		#concussion-preventionlist {
+			ul {
+
+				li {
+					background-size: 30px;
+					font-weight: 500;
+					font-size: 20px;
+					line-height: 1.7em;
+					padding-left: 55px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 480px) {
+
+	.concussion-center-two { // Add namespace wrap
+
+		/* hero content */
+		.row-xs-height {
+			display: table;
+			table-layout: fixed;
+			height: 100%;
+			width: 100%;
+		}
+
+		.col-xs-height {
+			display: table-cell;
+			float: none;
+			height: 100%;
+		}
+
+		.col-xs-top {
+			vertical-align: top;
+		}
+
+		.col-xs-middle {
+			vertical-align: middle;
+		}
+
+		.col-xs-bottom {
+			vertical-align: bottom;
+		}
+	}
+}
+
+.concussion-center-two { // Add namespace wrap
+	/* Styling an indeterminate progress bar */
+	progress {
+		vertical-align: bottom;
+	}
+
+	progress[value] {
+		appearance: none;
+		border: none;
+		width: 100%;
+		height: 20px;
+		background-color: rgba(0, 0, 0, .5);
+		box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
+		color: #3399ef;
+		position: relative;
+	}
+
+	progress[value]::-webkit-progress-bar {
+		background-color: rgba(0, 0, 0, .5);
+		box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
+	}
+
+	progress[value]::-webkit-progress-value {
+		position: relative;
+		background-size: 35px 20px, 100% 100%, 100% 100%;
+	}
+
+	/* Fallback technique styles */
+	.progress-bar {
+		background-color: rgba(0, 0, 0, .5);
+		box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
+		/* Dimensions should be similar to the parent progress element. */
+		width: 100%;
+		height: 20px;
+	}
+
+	.progress-bar span {
+		background-color: #3399ef;
+		display: block;
+		text-indent: -9999px;
+	}
+
+	p[data-value] {
+		position: relative;
+	}
+
+	p[data-value]:after {
+		content: attr(data-value) '%';
+		position: absolute;
+		right: 0;
+	}
+}

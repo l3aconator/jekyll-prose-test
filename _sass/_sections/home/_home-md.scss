@@ -1,0 +1,58 @@
+@include responsive(screen-md) {
+
+	#Welcome {
+		header + p {
+			margin: 0 20%;
+		}
+		&.video-one {
+			#headline {
+				h1 {
+					font-size: 50px;
+				}
+				h2 {
+					font-family: $museo-500;
+				}
+			}
+			.play-video.tight {
+				font-size: 30px;
+			}
+			h3.play-video.center-block {
+				font-size: 26px;
+			}
+		}
+	}
+
+	#Features {
+		.col-md-4 {
+			height: 230px;
+		}
+		.ss-icon {
+			font-size: 65px;
+			+ h3 {
+				margin-top: 0;
+			}
+		}
+	}
+
+	#Live {
+		header {
+			padding-bottom: 60px;
+		}
+		.row {
+			position: relative;
+		}
+		.sticky.md {
+			position: absolute;
+			bottom: 0;
+			left: 52.5%;
+		}
+	}
+
+	#side-trial {
+		label[for="Activities"],
+		input[type="submit"] {
+			font-size: 18px;
+		}
+	}
+
+}

@@ -1,0 +1,405 @@
+/* Header */
+
+#Header {
+	margin-bottom: 0;
+	border: none;
+
+	&.lift section:last-child {
+		box-shadow: 0 2px 2px rgba(darken($brand-primary-dark, 30%), .3);
+	}
+
+	.bg-info {
+		background: #efefef;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	.primary {
+		position: relative;
+		z-index: 1111;
+		border-bottom: 1px solid #eee;
+		background: #fff;
+		width: 100%;
+		transition: background 1s ease-in-out;
+		margin-top: 32px; // Offset for help nav
+
+
+		&.open {
+			margin-top: 1012px; // Offset for when help nav is open
+		}
+
+		.container {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		.nav > li {
+			padding-bottom: 0;
+
+			& > a {
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+		}
+
+		.navbar-right > li > a {
+
+			& + .sub-menu {
+				display: none;
+			}
+
+			&.sub-parent + .sub-menu {
+				display: block;
+			}
+		}
+
+		.logo {
+			margin: 0;
+			padding: 0;
+			max-width: 155px;
+			width: 70%;
+			height: 85px;
+			z-index: 100;
+			height: 100%;
+			display: block;
+
+			.main-logo {
+				margin-top: 12px;
+				display: block;
+			}
+		}
+
+		.mobile-login-btn {
+			position: absolute;
+			right: 100px;
+			text-transform: uppercase;
+			font-weight: bold;
+			top: 28px;
+			color: #333;
+		}
+
+		.main-nav {
+
+			li {
+
+				a {
+
+					&.active { // Replaces inline styles, was adding active styles based on structure
+						color: #0a3761;
+						font-weight: bold;
+					}
+				}
+
+				.menuitem-link {
+					color: white;
+				}
+			}
+		}
+
+		.navbar {
+			border: none;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.navbar-right > li a,
+		.navbar-right > li .btn-default {
+			font-weight: 500;
+		}
+
+		.navbar-right > li.open > a {
+			background-color: transparent;
+			color: $brand-orange;
+		}
+
+		.navbar-right > li > a,
+		.navbar-right > li.divider,
+		.navbar-right > li .btn-default {
+			color: $gray;
+			text-transform: uppercase;
+			font-size: $font-size-med;
+			font-family: $museo-700;
+		}
+
+		.navbar-right > li > a,
+		.navbar-right > li.divider {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.navbar-right > li > a:hover,
+		.navbar-right > li .btn-default:hover {
+			color: $brand-primary;
+		}
+
+		.navbar-right > li.divider {
+			font-size: 150%;
+			color: $gray;
+			height: $navbar-height;
+			line-height: $navbar-height;
+		}
+
+		.navbar-right > li > button {
+			margin-top: 26px;
+			margin-left: 15px;
+
+			a {
+				color: #fff;
+			}
+		}
+
+		.navbar-right > li:last-child {
+			padding-top: 10px;
+		}
+
+		&.fixed {
+			background: rgba(#fff, .95);
+			border-bottom: none;
+			margin-top: 0;
+
+			.logo {
+				height: 60px;
+				line-height: 60px;
+				max-width: 155px;
+				transition: all 0.3s ease-in-out;
+			}
+
+			.navbar-toggle {
+				margin-top: 16px;
+				margin-bottom: 16px;
+			}
+		}
+
+		.navbar-collapse {
+			margin-top: 85px;
+
+			&.in {
+				overflow: visible;
+			}
+		}
+	}
+
+	nav.secondary {
+		display: none;
+	}
+
+	div {
+
+		&.helpnav {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+	}
+}
+
+
+.morph-button-success > button,
+.morph-button-default > button {
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.morph-button-success,
+.morph-button-success .morph-content {
+	width: 100%;
+}
+
+.morph-button-default,
+.morph-button-default .morph-content {
+	width: 100%;
+	text-align: left;
+}
+
+#Utility_Heading {
+	position: relative;
+
+	.navbar-right {
+		position: absolute;
+		top: 5px;
+		right: 0;
+		z-index: 100;
+		.text-muted {
+			color: $gray !important;
+		}
+		li {
+			line-height: 20px;
+			a:after {
+				content: '|';
+				display: inline-block;
+				padding-left: 15px;
+			}
+			&:last-child a:after {
+				display: none;
+			}
+		}
+
+		.close {
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			display: none;
+			@include opacity(1);
+			background: #ccc;
+			color: #fff !important;
+			height: 20px;
+			width: 20px;
+			line-height: 20px;
+			border-radius: 10px;
+			text-align: center;
+			text-shadow: none;
+			font-weight: 500;
+			font-size: 14px;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+	}
+
+	.navbar-left {
+		margin: 0;
+		padding: 5px 0;
+		.text-muted {
+			color: #b1b1b1 !important;
+		}
+
+		li {
+			border-right: 1px solid #e2e2e2;
+			height: 20px;
+			line-height: 20px;
+			&:last-child {
+				border-right: none;
+			}
+		}
+	}
+}
+
+#Utility_Panel {
+
+	h4 {
+		margin: 15px 0;
+
+		font: {
+			family: $museo-300;
+			size: 21px;
+		}
+	}
+
+	.panel-body {
+		padding-top: 0;
+		padding-bottom: 0;
+		overflow: hidden;
+		position: relative;
+	}
+
+	form {
+		label {
+			display: block;
+			padding: 10px 0 15px 0;
+		}
+	}
+
+	.col-md-4 {
+		padding: 20px;
+		position: relative;
+		padding-left: 0;
+
+		> *:first-child {
+			padding-top: 0;
+			margin-top: 0;
+		}
+
+		> *:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+
+		.col-md-6 {
+			padding-left: 0;
+		}
+
+		form, p {
+			width: 80%;
+		}
+
+		&:first-child {
+			> * {
+				padding-left: 0;
+			}
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 0;
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #ccc;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+
+		&:last-child:after {
+			display: none;
+		}
+	}
+
+	a {
+		color: $brand-primary-dark;
+
+		&:hover {
+			color: $brand-primary;
+			text-decoration: none;
+		}
+	}
+
+	p {
+		color: $gray;
+
+		.small {
+			color: $brand-primary-dark;
+		}
+	}
+}
+
+@include responsive(screen-xs) {
+
+	#Header section.primary .logo {
+		max-width: 215px;
+	}
+}
+
+@include responsive(screen-sm) {
+
+	#Header section.primary .logo {
+		max-width: 215px;
+	}
+}
+
+@import 'header-md';
+
+@include responsive(screen-lg) {
+
+	#Header {
+
+		section.primary {
+
+			.navbar-right > li > a,
+			.navbar-right > li.divider,
+			.navbar-right > li .btn-default {
+				font-size: 15px;
+				font-family: $museo-700;
+			}
+
+			.logo {
+				max-width: 215px;
+			}
+		}
+	}
+
+}

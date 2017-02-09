@@ -1,0 +1,991 @@
+.leagues-clubs-teams {
+	/* --------------- Media Query Start --------------- */
+	@media (min-width: 1200px) {
+		.TMUcontainer {
+			width: 1170px;
+		}
+
+		#TMUappshowcase {
+			background-image:url('#{$img-path}leagues-clubs-teams/GreyBkgd_large_01.svg') !important;
+			margin-top: -5% !important;
+			padding-top: 5% !important;
+		}
+	}
+
+	@media (min-width: 992px) {
+		.TMUcontainer {
+			width: 970px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.TMUcontainer {
+			width: 750px;
+		}
+		.TMUvcenter {
+			display: inline-block;
+			vertical-align: middle;
+			float: none;
+		}
+
+		.TMUinside-full-height {
+			/*
+			// if you want to give content full height give him height: 100%;
+			// with content full height you can't apply margins to the content
+			// content full height does not work in ie http://stackoverflow.com/questions/27384433/ie-display-table-cell-child-ignores-height-100
+			*/
+			height: 100%;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.TMUrow-height {
+			display: table;
+			table-layout: fixed;
+			height: 100%;
+			width: 100%;
+		}
+
+		.TMUcol-height {
+			display: table-cell;
+			float: none;
+			height: 100%;
+		}
+	}
+
+	@media (max-width: 1100px) {
+		#TMUhero h1 {
+			font-size: 50px !important;
+		}
+
+		.TMUteamscta h4 {
+			font-size:22px !important ;
+		}
+	}
+
+	@media (max-width:991px) {
+		#TMUhero h1 {
+			font-size: 44px !important;
+			padding-top: 20px !important;
+		}
+
+		#TMUhero p {
+			text-align: center !important;
+		}
+
+		.TMUteamscta h4 {
+			font-size:20px !important ;
+		}
+	}
+
+	@media (max-width: 768px) {
+		#TMUheroimgmobile {
+			background-image: url('#{$img-path}leagues-clubs-teams/Herobkgdmobile_01-compressor.png');
+			background-repeat: repeat-y;
+			background-position: center;
+			background-size: 90%;
+		}
+
+		#TMUheroimg {
+			background-image: url('#{$img-path}leagues-clubs-teams/HeroImagemobile_05-compressor.png') !important;
+			background-size: 63% !important;
+			background-position: bottom center !important;
+		}
+
+		#TMUhero h1 {
+			text-align: center !important;
+			font-size: 44px !important;
+		}
+
+		#TMUhero p {
+			padding-bottom: 30% ;
+		}
+
+		.TMUteamscta h4 {
+			text-align: center !important;
+			font-size:20px !important ;
+		}
+
+		.TMUteamscta button {
+			box-shadow: 4px 4px #5a892f;
+		}
+
+		#TMUappshowcase {
+			background-size: cover;
+			background: #e9eaee; /* For browsers that do not support gradients */
+			background: -webkit-linear-gradient( #fff, #e9eaee)!important; /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(#fff, #e9eaee)!important; /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(#fff, #e9eaee)!important; /* For Firefox 3.6 to 15 */
+			background: linear-gradient(#fff, #e9eaee)!important; /* Standard syntax */
+			padding: 15px !important;
+			margin: 0px !important;
+		}
+
+		#TMUappshowcasecom {
+			padding-top: 0px !important;
+		}
+
+		.TMUfootercopy {
+			font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial;
+			font-weight: 300;
+			font-size: 14px;
+			color:#8db5d7;
+			text-align:center;
+		}
+		.TMUfootercopy {
+			padding-top: 0 !important;
+		}
+
+		#TMUfq {
+			margin-top: 60px;
+		}
+
+		.carousel-inner p {
+			font-size: 18px !important;
+			font-family: "MuseoSansRounded300Regular" !important;
+			font-weight: 300 !important;
+		}
+
+		#TMUclfeatures h2 {
+			text-align: center!important;
+			margin: auto !important;
+		}
+
+		#TMUclfeatures br {
+			display: none;
+		}
+
+		#TMUclintro {
+			padding-top:60px;
+			padding-bottom: 60px;
+			background-image:url('#{$img-path}leagues-clubs-teams/GreenBkgd_02-compressor.jpg') !important;
+			background-attachment:scroll !important;
+		}
+
+		#TMUclintro h1 {
+			text-align: center;
+
+		}
+
+		#TMUclintro h2 {
+			text-align: center;
+		}
+
+		#TMUappshowcase h2 {
+			padding-top: 60px;
+			padding-bottom: 30px;
+		}
+
+		#TMUappshowcase p {
+			padding: 20px 0 15px 0 !important;
+		}
+		#TMUlearnmore {
+			text-align: center !important;
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 30px;
+		}
+
+
+		#TMUlearnmore a {
+			border: none !important;
+			padding:4px 0  !important;
+			font-size: 12px  !important;
+			border-radius: 0  !important;
+		}
+
+		#TMUlearnmore {
+			background-color: #1d3447 !important;
+			padding: 0px;
+			margin: 0 -15px;
+			position: absolute;
+			width: 100%;
+		}
+
+		#TMUhero .container {
+			padding-left: 0;
+			padding-right: 0;
+			padding-top: 0;
+			padding-bottom: 4%;
+		}
+
+		#TMUherocontent {
+			padding-top:60px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		.TMUquestions p {
+			font-size: 24px !important;
+		}
+
+	}
+
+	@media (max-width: 480px) {
+
+		#TMUhero h1 {
+			font-family: "MuseoSansRounded500Regular", "Open Sans", "Helvetica Neue", Helvetica, Arial !important;
+			font-size: 34px !important;
+			font-weight: 500 !important;
+			text-shadow: 2px 2px #0b385d;
+			text-align: center !important;
+			padding-top: 0px !important;
+		}
+
+		#TMUheroimg {
+			background-size: contain !important;
+		}
+
+		#TMUhero p {
+			padding-bottom: 60% !important;
+		}
+
+		.TMUteamscta button {
+			width: 200px !important;
+			margin: 10px !important;
+			font-size: 18px !important;
+		}
+
+	}
+
+
+	/* --------------- Media Query End --------------- */
+
+
+
+	/* --------------- Body Items Start --------------- */
+
+	.TMUcontainer {
+		margin: auto;
+	}
+
+	.TMUteamscta h4 {
+		font-family: "museo-slab", "MuseoSansRounded500Regular", "Open Sans", "Helvetica Neue", Helvetica, Arial;
+		font-size: 25px;
+		padding: 20px 0;
+		color: #fff;
+	}
+
+	.strike {
+		display: block;
+		text-align: center;
+		overflow: hidden;
+		white-space: nowrap;
+		color: #828891;
+		font-family: $museo-300;
+		font-size: 30px;
+	}
+
+	.strike > span {
+		position: relative;
+		display: inline-block;
+	}
+
+	.strike > span:before,
+	.strike > span:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		width: 9999px;
+		height: 1px;
+		background: #e7e7e7;
+	}
+
+	.strike > span:before {
+		right: 100%;
+		margin-right: 15px;
+	}
+
+	.strike > span:after {
+		left: 100%;
+		margin-left: 15px;
+	}
+
+	/* --------------- Body Items End --------------- */
+
+
+
+	/* --------------- Hero Start --------------- */
+
+	#TMUhero {
+		background-size: cover;
+		background: #1a6baf; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(-90deg, #1a6baf, #0d91d3); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(-90deg, #1a6baf, #0d91d3); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(-90deg, #1a6baf, #0d91d3); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(90deg, #1a6baf, #0d91d3); /* Standard syntax */
+	}
+
+	#TMUhero h1 {
+		font-family: $museo-700;
+		font-size: 67px;
+		text-shadow: 3px 3px #0b385d;
+		text-align: left;
+		color: #fff;
+		padding-top: 35px;
+	}
+
+	#TMUhero p {
+		font-family: $open-sans;
+		font-weight: 500;
+		font-size: 16px;
+		text-align: left;
+		color: #fff;
+	}
+
+	#TMUheroimg {
+		background-image: url('#{$img-path}leagues-clubs-teams/HeroImage_06-compressor.png');
+		background-size: 58%;
+		background-position: bottom right;
+		background-repeat: no-repeat;
+		background-position-x: 107%;
+		background-position-y: 71%;
+	}
+
+	#TMUherocontent {
+		padding-top:60px;
+	}
+
+	#TMUhero .container {
+		padding-bottom: 10%;
+	}
+
+	#TMUhero .TMUteamscta {
+		text-align: left;
+		padding-top: 10px;
+	}
+
+	.TMUteamscta button {
+		width: 30%;
+		margin: .5%;
+		padding: 13px 5px;
+		border-radius: 50px;
+		font-size: 16px;
+		font-weight: 500;
+		font-family: $museo-300;
+	}
+
+	#TMUctamobile {
+		background-color: #7fc243;
+		padding: 0 0 50px 0;
+	}
+
+	#TMUlearnmore {
+		text-align: left;
+	}
+
+
+	#TMUlearnmore a {
+		border: solid 2px #3a9bec;
+		background-color: rgba(0,0,0,0.00);
+		padding:8px 20px;
+		color: #3a9bec;
+		font-family: $museo-300;
+		font-size: 15px;
+		font-weight: 500;
+		border-radius: 5px;
+	}
+
+	/* --------------- Hero End --------------- */
+
+
+
+	/* --------------- App Showcase Start --------------- */
+	#TMUappshowcase {
+		background-image:url('#{$img-path}leagues-clubs-teams/GreyBkgd_01.svg');
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: 100%;
+		margin-top: -8%;
+		padding-top: 9%;
+		text-align: center;
+	}
+
+
+	#TMUappshowcase h2 {
+		color: #1a6baf;
+		font-family: $museo-300;
+		font-weight: 500;
+		font-size: 30px;
+
+	}
+
+	#TMUappshowcase p {
+		color: #1d3447;
+		font-family: $open-sans;
+		font-weight: 400;
+		font-size: 15px;
+		padding:15px;
+	}
+
+	.TMUappshowcaseimg img {
+		width:87%;
+	}
+
+	.TMUappshowcaseimg h2 {
+		color: #1d3447 !important;
+		padding: 30px 0 40px 0;
+		font-size: 24px;
+	}
+
+	.TMUappshowcaseimg span {
+		color: #1d3447 !important;
+		font-size: 18px;
+		font-weight: 300;
+		font-family: $open-sans;
+	}
+
+	.TMUappshowcasemobile img {
+		max-width: 290px;
+		width: 100%;
+	}
+	/* --------------- App Showcase End --------------- */
+
+
+
+	/* --------------- Club & League Intro Start --------------- */
+	#TMUclintro {
+		background-image:url('#{$img-path}leagues-clubs-teams/GreenBkgd_01-compressor.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+		color: #fff;
+		font-size: 15px;
+		font-family: $open-sans;
+	}
+
+	#TMUclintro h1 {
+		font-family: $museo-700;
+		font-size: 47px;
+		font-weight: 900;
+		text-shadow: 1px 1px #171513;
+		color: #FFFFFF;
+	}
+
+	#TMUclintro h2 {
+		font-family: $museo-300;
+		font-size: 27px;
+		color: #1d3447;
+	}
+
+	/* --------------- lub & League Intro End --------------- */
+
+
+
+	/* --------------- Club & League Features Start --------------- */
+	#TMUclfeatures {
+		background-image: url('#{$img-path}leagues-clubs-teams/groovepaper.png');
+		border-top: 1px solid #ececec;
+		border-bottom: 1px solid #ececec;
+		padding-top:30px;
+		padding-bottom:30px;
+	}
+
+	#TMUclfeatures h2 {
+		text-align: right;
+		font-size: 30px;
+		color: #1a6baf;
+		margin: 0;
+		padding: 10px 15px;
+		line-height: 1.3;
+	}
+
+	#TMUclfeatures p {
+		color: #828891;
+		font-size: 16px;
+		font-family: $open-sans;
+		font-weight: 100;
+		margin: 0;
+		padding: 10px 0;
+	}
+
+	.TMUclpad {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	/* --------------- Club & League Features End --------------- */
+
+
+
+
+	/* --------------- Testimonials Start --------------- */
+	#Testimonials {
+		padding:15px;
+	}
+
+	.carousel-inner p {
+		padding-top: 25px;
+		font-family: $museo-700;
+		font-size: 30px;
+		color: #0a3761;
+		text-align: center;
+		line-height: 1.4;
+	}
+
+	.carousel-inner strong {
+		font-family: $museo-700 !important;
+		font-weight: 700;
+		letter-spacing: .5px;
+	}
+
+	.carousel-inner cite {
+		display: block;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 100;
+		padding-top: 6px;
+		font-family: $museo-300, sans-serif;
+		color: #687483;
+		padding: 10px
+	}
+
+	.carousel .carousel-inner {
+		min-height: 240px;
+	}
+
+
+	/* --------------- Testimonials End --------------- */
+
+
+
+
+
+	/* --------------- F&Q Start --------------- */
+	#TMUfq {
+		background-color: #2687d8;
+		font-family:  $open-sans;
+		font-weight: 300;
+		color: #dae8f3;
+		font-size: 14px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		letter-spacing: .2px;
+	}
+
+
+	#TMUfq h4 {
+		font-size: 17px;
+		font-family: "museo-slab", "MuseoSansRounded500Regular", "Open Sans", "Helvetica Neue", Helvetica, Arial;
+		color: #fff;
+		letter-spacing: .5px;
+	}
+
+	.TMUfqpad {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	/* --------------- F&Q End --------------- */
+
+
+
+
+
+
+
+
+	/* --------------- Footer Start --------------- */
+	.TMUsuperkid {
+		text-align: right;
+		padding-bottom: 60px;
+	}
+	@media (max-width: 768px) {
+		.TMUsuperkid {
+			text-align: center;
+			padding-bottom: 0px;
+		}
+
+		.TMUsuperkid img {
+			max-width: 200px !important;
+		}
+	}
+
+	#TMUfooter {
+		background-color: #1a6baf;
+		color: #fff;
+		font-family: $museo-300;
+		font-size: 25px;
+
+	}
+
+	.TMUfootercopy {
+		padding: 75px 15px;
+	}
+
+
+	.TMUcopyright {
+		font-size:14px;
+		font-weight: 300;
+		font-family: $open-sans;
+		line-height: 1.7;
+		vertical-align: middle;
+		background-color:#4f5050;
+		text-align: center;
+		color: #FFFFFF;
+		padding: 10px 15px;
+		letter-spacing: 0.5px;
+
+	}
+	/* --------------- Footer End --------------- */
+
+
+
+
+	/* --------------- Modal Start --------------- */
+
+	
+	.modal form input[type="submit"] {
+		min-height: 50px;
+		width: 100%;
+		font-size: 23px !important;
+		font-family: $museo-300;
+		font-weight: 500;
+		text-shadow: -2px -1px rgba(0,0,0,0.1);
+	}
+	
+	.TMUbutton-success {
+		min-height: 50px;
+		width: 100%;
+		font-size: 23px;
+		font-family: $museo-300;
+		font-weight: 500;
+		text-shadow: -2px -1px rgba(0,0,0,0.1);
+	}
+	
+	.TMUmodal .modal-dialog {
+		max-width: 998px;
+		width: 100%;
+		padding: 50px;
+		margin: auto;
+		/*
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%)!important;
+		*/
+	}
+
+	.TMUmodal-content {
+		width: 100%;
+		background-color: #fff;
+		border-radius: 8px;
+		min-height: 545px;
+
+		form {
+			max-width: 100%;
+		}
+	}
+
+	.TMUmodal-header {
+		width: 100%;
+		background-color: #2665a8;
+		border-radius: 8px 8px 0 0;
+		height: 68px;
+	}
+
+	.TMUmodal-header h4 {
+		padding: 15px;
+		color: #fff;
+		font-family: $museo-300;
+		text-align: center;
+		font-size: 30px;
+		line-height: 1.3;
+		margin: 0;
+	}
+
+	.TMUmodal-headermobile {
+		width:100%;
+		height: 55px;
+		border-bottom: 1px solid #145185;
+		overflow: auto;
+		background-color:  #2665a8;
+		border-radius: 0px;
+	}
+
+	.TMUpreviouswidth {
+		width: 73%;
+		border-right: 1px solid #145185;
+	}
+
+	.TMUclosebutton {
+		width: 27%;
+		text-align: center;
+		opacity: .7;
+	}
+
+	.TMUmodal-body {
+		padding: 30px 7%;
+		width: 100%;
+		vertical-align: middle;
+		text-align: center;
+		height: 380px;
+	}
+
+	.TMUquestions p {
+		color: #5a6069;
+		font-family: $museo-700;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 1.3;
+		max-width: 600px;
+		margin: auto;
+	}
+
+
+	.TMUprevious {
+		border: none;
+		background-color: transparent;
+		color: #a8adb2;
+		font-family: $open-sans;
+		font-size: 16px;
+		font-weight: 300;
+		opacity: .5;
+		padding: 0 0 15px 0;
+		background-image:url('#{$img-path}leagues-clubs-teams/BackArrow.svg');
+		background-repeat: no-repeat;
+		background-size: 16px;
+		padding-left: 26px;
+		background-position-y: 2px;
+	}
+
+	.TMU-free-trial {
+		margin-top: 25px;
+	}
+
+
+	.TMUstart {
+		color: #a8adb2;
+		font-family: $open-sans;
+		font-size: 16px;
+		font-weight: 300;
+		opacity: .5;
+		padding: 0;
+	}
+
+
+	.TMUprevious:hover {
+		opacity: 1;
+	}
+
+	.TMUbuttons {
+		padding:35px 0 0 0;
+	}
+
+	.TMUbuttons button {
+		font-family: $open-sans;
+		font-weight: 600;
+		width: 120px;
+		height: 55px;
+		margin: 15px;
+		font-size: 20px;
+		text-shadow: 0px 1px rgba(0, 0, 0, 0.3);
+	}
+
+	.m-progress-bar {
+		min-height: 12px;
+		background: #2665a8;
+		width: 5%;
+		border-radius: 6px;
+	}
+
+	.m-progress-barbkgd {
+		background-color: #ececec;
+		border-radius: 6px;
+	}
+
+	.TMUmodal-footer {
+		vertical-align: bottom;
+		padding: 0px 7% 40px 7%;
+	}
+
+
+
+
+	.TMUclcta {
+		padding: 0px 20px;
+	}
+
+
+	.TMUclcta button {
+		width: 100%;
+		min-height: 50px;
+	}
+
+	.TMUclfeature h2 {
+		color: #1a6baf;
+		font-size: 30px;
+		padding-bottom:15px;
+	}
+
+
+	.TMUclfeature li {
+		list-style: disc;
+		font-size: 18px;
+		color: #828891;
+		line-height: 20px;
+		margin-left: 35px;
+	}
+
+	.TMUclctamobile {
+		background-image: linear-gradient(to bottom, #2778c2, #236bad);
+		margin: 20px 0;
+		padding: 35px 30px;
+		text-align: center;
+		border-radius: 6px;
+		width: 100%;
+		border: 1px solid #1a5183;
+	}
+
+	.TMUorangegrade {
+		background-image: linear-gradient(to bottom, #ff7c00, #f75b02) !important;
+		border: 1px solid #d54e02 !important;
+	}
+
+	.TMUclctamobile span {
+		color: #fff;
+		font-size: 80px;
+	}
+
+	.TMUclctamobile h3 {
+		color: #fff;
+		font-size: 23px;
+		margin-top: 0;
+	}
+
+	.TMUclctamobile p {
+		color: #fff;
+		font-size: 16px;
+		font-family: $open-sans;
+		font-weight: 300;
+	}
+
+	.TMUcontentresults {
+		height: auto !important;
+		background-color: #fff !important;
+	}
+
+
+	.TMUemail input[type="text"], input[type="email"], input[type="phone"], input[type="password"], textarea {
+		border: 1px solid #ccc;
+		padding: 0;
+		text-indent: 20px;
+		width: 100%;
+		border-radius: 3px;
+		box-shadow: 0 0 5px #ccc inset;
+		font-weight: 500;
+		font-size: 17px !important;
+		color: #b7b7b7 !important;
+	}
+
+
+
+
+
+
+	/* --------------- Media max-width 321 Start --------------- */
+	@media (max-width: 321px) {
+
+		.TMUquestions p {
+			font-size: 20px !important;
+		}
+
+		.TMUmodal-header h4 {
+			font-size: 20px !important;
+		}
+	}
+	/* --------------- Media max-width 321 End --------------- */
+
+	@media (min-width:481px) {
+		.hidden-480-up {
+			display: none !important;
+		}
+	}
+
+	/* --------------- Media max-width 480 Start --------------- */
+	@media (max-width:480px) {
+		.hidden-480-down {
+			display: none !important;
+		}
+
+		.TMUmodal .modal-dialog {
+			padding: 0px !important;
+			height: 100%;
+		}
+
+		.TMUmodal-content {
+			height: 100%;
+			border: none;
+			border-radius: 0px;
+			background-color: #2665a8;
+		}
+
+		.TMUmodal-header {
+			height: 55px;
+		}
+
+		.TMUquestions p {
+			font-family: $museo-300;
+			font-weight: 500;
+			text-align: left;
+			font-size: 24px !important;
+			color: #fff;
+		}
+
+		.TMUmodal-body {
+			vertical-align: top;
+			height: 100%;
+			padding-top: 60px;
+		}
+
+		.TMUbuttons button {
+			width: 40%;
+			height: 70px;
+			margin: 4%;
+			font-size: 24px;
+			text-shadow: none;
+		}
+
+		.TMUbuttons .btn-primary {
+			background-color: transparent;
+			background-image: none;
+			border: 2px solid #fff;
+		}
+
+		.TMUprevious {
+			color: #3a9bec;
+			font-size: 16px;
+			font-weight: 500;
+			opacity: .7;
+			background-size: 20px;
+			background-position-y: 15px;
+			margin-left: 25px;
+			padding-left: 30px;
+			padding-top: 16px;
+			background-image: url('#{$img-path}leagues-clubs-teams/BackArrow_light.svg');
+		}
+
+		.TMUstart {
+			padding-left: 25px;
+			color: #3a9bec;
+			padding-top: 12px;
+			opacity: .7;
+			font-weight: 600;
+		}
+
+
+		.m-progress-bar {
+			background: #3a9bec;
+		}
+
+		.m-progress-barbkgd {
+			background-color: #145185;
+		}
+	}
+	/* --------------- Media max-width 480 End --------------- */
+
+
+	/* --------------- Modal End --------------- */
+
+
+}
+

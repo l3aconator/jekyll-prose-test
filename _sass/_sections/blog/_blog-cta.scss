@@ -1,0 +1,17 @@
+.desktop-hide {
+	display: none;
+}
+
+.cta-img-wrap {
+	width: 100%;
+}
+
+@media (max-width: $screen-md) {
+	.desktop-hide {
+		display: block;
+	}
+	.mobile-hide {
+		display: none;
+	}
+}
+ 

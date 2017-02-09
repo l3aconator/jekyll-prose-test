@@ -1,0 +1,63 @@
+@include responsive(screen-sm) {
+
+	#Welcome {
+		header + p {
+			margin: 0 10%;
+		}
+		#welcome-video {
+			max-width: 560px;
+		}
+		&[class*="video"] {
+			height: 100%;
+		}
+		&.video-one {
+			#headline {
+				h1 {
+					font-size: 57px;
+				}
+				h2 {
+					font-family: $museo-500;
+				}
+			}
+			form {
+				background: rgba(255, 255, 255, 0.0);
+				&.stacked {
+					.col-base-12,
+					.col-sm-6 {
+						margin-bottom: 10px;
+					}
+					.col-sm-6:first-child {
+						padding-right: 0px;
+					}
+					.col-sm-6 + .col-sm-6 {
+						padding-left: 5px;
+					}
+				}
+			}
+		}
+		#side-trial {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	#Features {
+		.col-md-4 {
+			height: 220px;
+		}
+	}
+
+	#side-trial {
+		input[type="email"],
+		input[type="text"],
+		input[type="password"] {
+			margin-bottom: 0;
+			margin-right: 0;
+		}
+		.form-group,
+		input[type="submit"] {
+			margin: 5px 0;
+		}
+	}
+
+}

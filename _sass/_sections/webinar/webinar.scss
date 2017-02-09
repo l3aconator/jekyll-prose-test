@@ -1,0 +1,14 @@
+#webinar {
+
+	ul li {
+		position: inherit;
+		padding-left: 0;
+		&:before {
+			content: '';
+		}
+
+		ul li {
+			list-style: none;
+		}
+	}
+}

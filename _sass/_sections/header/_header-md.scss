@@ -1,0 +1,318 @@
+@include responsive(screen-md) {
+
+	.logo-block {
+		width: 25%;
+		position: relative;
+	}
+
+	#Header {
+		position: relative; // Adding for secondary nav
+
+		.primary {
+			border-bottom: none;
+
+		.container {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		.nav > li > a {
+			padding-top: 32.5px;
+			padding-bottom: 32.5px;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.navbar {
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+
+		.navbar-right > li > a {
+
+			& + .sub-menu {
+				display: none !important;
+			}
+		}
+
+		.navbar-right > li:last-child {
+			padding-top: 0px;
+		}
+
+		.navbar-right > li > a,
+		.navbar-right > li.divider {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		.morph-button {
+			margin: 26px auto 0 auto;
+		}
+
+		.navbar-collapse {
+			margin-top: 0;
+		}
+
+		&.fixed {
+			margin-top: 0;
+
+			.navbar {
+				min-height: 60px;
+
+				> li > a {
+					padding-top: 22px;
+					padding-bottom: 18px;
+				}
+			}
+
+			.mt20 {
+				margin-top: 10px !important;
+			}
+
+			.logo,
+			li.divider {
+				height: 60px;
+				line-height: 60px;
+			}
+
+			.morph-button {
+				margin: 13px auto 0 auto;
+				}
+			}
+		}
+
+		$sub-menu-height: 70px;
+
+		&.lift { //Fix refactor bug
+
+			nav.secondary {
+				position: fixed;
+				top: 60px;
+				left: 0;
+				width: 100%;
+				z-index: 1111;
+				background: rgba($brand-primary-dark, .9);
+				border-top: none;
+
+				.sub-menu {
+
+					li {
+						height: ($sub-menu-height - 30px);
+						padding-bottom: 0;
+
+						&.sub-title {
+
+							h3 {
+								bottom: 10px;
+								font-size: 20px;
+							}
+						}
+					}
+
+					a {
+						display: block;
+						height: 100%;
+						margin: 0;
+						padding: 0 14px;
+						line-height: ($sub-menu-height - 30px);
+					}
+				}
+			}
+		}
+
+		// This is the pre scroll styling
+		nav.secondary {
+			display: block;
+
+			.sub-menu {
+				position: relative;
+				margin: 0;
+
+				&:before,
+				&:after {
+					content: '';
+					clear: both;
+					display: block;
+				}
+
+			li {
+				float: right;
+				display: block;
+				height: $sub-menu-height;
+				transition: all 0.3s ease-in-out;
+
+				&.sub-title {
+					position: absolute;
+					left: 0;
+					top: 0;
+
+					h3 {
+						position: absolute;
+						bottom: 10px;
+						margin: 0;
+						left: 0;
+						white-space: nowrap;
+					}
+				}
+			}
+
+				a {
+					display: block;
+					height: auto;
+					margin-top: ($sub-menu-height - 40px);
+					padding: 5px 14px;
+					font-size: $mod-font-size--1;
+					font-family: $museo-300;
+
+					&:hover {
+						color: #fff;
+						text-decoration: none;
+						color: #aacde9;
+					}
+
+					&.current-page {
+						color: #aacde9;
+						background: rgba($brand-primary, .35);
+
+						&:hover {
+							color: #aacde9;
+						}
+					}
+				}
+			}
+		}
+
+		.primary {
+			margin-top: 32px; // Offset for help nav
+
+			&.open {
+				margin-top: 356px; // Offset for when help nav is open
+			}
+
+			.sub-parent {
+				position: relative;
+				color: $brand-primary !important;
+
+				&:after {
+					content: '';
+					display: block;
+					height: 3px;
+					width: 100%;
+					background: $brand-primary-dark;
+					position: absolute;
+					bottom: 0px;
+					left: 0;
+					z-index: -1;
+					border-radius: 1px;
+				}
+			}
+
+		&.fixed .sub-parent:after {
+			@include opacity(.9);
+		}
+
+			&.fixed {
+
+				[class^="mt25"] {
+				margin-top: 15px !important;
+				}
+			}
+		}
+
+		// Begin refactor for help nav HTMl
+		// Attaching it the top of the viewport
+		div {
+
+			&.helpnav {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+			}
+		}
+		// End refactor for help nav HTMl
+
+	}
+
+	.morph-button-success,
+	.morph-button-success .morph-content {
+		width: 100px;
+	}
+
+	.morph-button-default,
+	.morph-button-default .morph-content {
+		width: 80px;
+		text-align: center;
+	}
+
+	.morph-button-default button {
+		padding-left: 10px;
+	}
+
+	#Utility_Panel {
+
+		.col-md-4 {
+			position: static;
+			padding-left: 15px;
+			padding-bottom: 20px;
+
+			&:after {
+				display: none;
+			}
+
+			&:nth-child(2):before,
+			&:nth-child(2):after {
+				content: '';
+				display: block;
+				width: 0;
+				border-right: 1px solid #fff;
+				border-left: 1px solid #ccc;
+				height: 100%;
+				position: absolute;
+				top: -20px;
+			}
+
+			&:nth-child(2):before {
+				left: 33%;
+			}
+
+			&:nth-child(2):after {
+				left: 65.5%;
+			}
+
+			> * {
+				padding-left: 10px;
+			}
+		}
+	}
+
+	#Header.french  section.primary .navbar-right > li > a,
+	#Header.french section.primary .navbar-right > li.divider {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
+
+// Responsive fix to stop sub nav items from running into subtitle
+@media (min-width: $screen-md) and (max-width: 1105px) {
+
+	#Header {
+
+		nav {
+
+			&.secondary {
+
+				.sub-menu {
+
+					li {
+
+						a {
+							font-size: 13px;
+							padding-left: 9px;
+							padding-right: 9px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

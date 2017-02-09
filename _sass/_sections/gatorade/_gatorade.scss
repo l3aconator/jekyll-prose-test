@@ -1,0 +1,507 @@
+/* --------------- Section - Hero Content --------------- */
+.gatorade-herotext h1 {
+	font-family: "MuseoSansRounded700Regular", sans-serif;
+	font-size: 44px;
+	text-shadow: 0 1px 2px #333;
+	color: #ffffff;
+}
+
+.gatorade-herotext > h3 {
+	font-family: "MuseoSansRounded700Regular", sans-serif;
+	font-size: 38px;
+	text-shadow: 0 1px 2px #333;
+	color: #ffffff;
+	hyphens: none;
+	padding-bottom: 140px;
+	line-height: 1.2em;
+	text-align: left;
+}
+
+.gatorade-herotext p {
+	font-family: "MuseoSansRounded300Regular", sans-serif;
+	font-size: 22px;
+	text-shadow: 0 1px 1px #333;
+	color: #ffffff;
+}
+
+/* --------------- End - Hero Content --------------- */
+
+/* --------------- Section - Countdown --------------- */
+#clockdiv {
+	font-family: "MuseoSansRounded100Regular", sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 300;
+	text-align: center;
+	font-size: 135px;
+	line-height: .5em;
+	border: solid #baff79 3px;
+	border-radius: 25px;
+	padding: 30px;
+	margin: 30px 0 70px 0;
+}
+
+#clockdiv > div {
+	padding: 10px;
+	display: inline-block;
+}
+
+#clockdiv div > span {
+	padding: 15px;
+	display: inline-block;
+	width: 180px;
+
+}
+
+.smalltext {
+	padding-top: 40px;
+	font-size: 24px;
+	text-transform: uppercase;
+	line-height: 0em;
+}
+
+/* --------------- End - Countdown --------------- */
+
+/* --------------- Section - Body Copy --------------- */
+.gatorade-bodytext {
+	padding-right: 30px;
+	padding-bottom: 60px;
+	text-align: left;
+}
+
+.gatorade-bodytext h3 {
+	font-family: "MuseoSansRounded700Regular", sans-serif;
+	font-size: 34px;
+	color: #1269b1;
+}
+
+.gatorade-bodytext h4 {
+	font-family: "MuseoSansRounded700Regular", sans-serif;
+	font-size: 24px;
+	color: #1269b1;
+}
+
+.gatorade-bodytext p {
+	font-family: "MuseoSansRounded300Regular", sans-serif;
+	font-size: 18px;
+	color: #404040;
+}
+
+/* --------------- End - Body Copy --------------- */
+
+/* --------------- Section - Bullet Styles --------------- */
+.gatorade-list h3 {
+	padding: 40px 0px 15px 0px;
+}
+
+.gatorade-list li {
+	background: url('../images/content/landing-pages/Check.png') no-repeat 0 7px;
+	font-family: "MuseoSansRounded700Regular", sans-serif;
+	font-size: 22px;
+	color: #404040;
+	line-height: 1.3em;
+}
+
+.gatorade-list li:before, #page ol li:before {
+	content: none !important;
+}
+
+.gatorade-list li {
+	padding-left: 45px;
+}
+
+/* --------------- End - Bullet Styles --------------- */
+
+/* --------------- Section - Form --------------- */
+.gatorade-formbkgd {
+	background-color: #ffffff;
+	border-radius: 25px;
+	box-shadow: 0 0 3px #333;
+	background-image: url('../images/content/landing-pages/TopFormImage_01_06.jpg');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.gatorade-form {
+	padding: 15px 40px 40px 40px;
+}
+
+.gatorade-form h4 {
+	font-family: "MuseoSansRounded500Regular", sans-serif;
+	font-size: 20px;
+	color: #404040;
+}
+
+.gatorade-form input {
+	margin: 7px 0;
+}
+
+.gatorade-formbtn {
+	padding: 15px 60px;
+	font-size: 24px;
+	letter-spacing: 1px;
+	font-family: "MuseoSansRounded700Regular", sans-serif;
+	text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* --------------- End - Form --------------- */
+
+/* --------------- MISC --------------- */
+.padding20 {
+	padding: 0px 20px;
+}
+
+.MT0 {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.bold {
+	font-family: "MuseoSansRounded700Regular", sans-serif;;
+	font-weight: 700;
+}
+
+a {
+	color: #3399ef;
+}
+
+.vcenter {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
+.gatorade-logos {
+	padding: 30px 0 45px 0;
+}
+
+/* --------------- End - MISC --------------- */
+
+/* --------------- Section - CTA --------------- */
+.gatorade-CTAbkgd {
+	background-image: url('../images/content/landing-pages/Coach_02-compressor.png');
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: contain;
+}
+
+.gatorade-CTA {
+	height: 366px;
+}
+
+/* --------------- End - CTA --------------- */
+
+/* --------------- Background --------------- */
+.gatorade-herobkgd {
+	background-image: url('../images/content/landing-pages/Background_TopSection_04.jpg');
+	background-size: auto;
+	background-position: top center;
+	background-repeat: no-repeat;
+	padding-bottom: 60px;
+}
+
+.gatorade-contentbkgd {
+  background-image: url('#{$img-path}groovepaper.png');
+  background-repeat:repeat;
+  background-position:top center;
+}
+
+/* --------------- End Background --------------- */
+
+/* --------------- Media Query --------------- */
+
+@media screen and (max-width: 1100px) {
+
+	/* -- Section - Hero Content -- */
+	.gatorade-herotext h1 {
+		font-size: 36px;
+	}
+
+	.gatorade-herotext h3 {
+		font-size: 34px;
+		padding-bottom: 110px;
+	}
+
+	/* -- Section - Countdown -- */
+	#clockdiv {
+		font-size: 100px;
+	}
+
+	#clockdiv div > span {
+		width: 150px;
+	}
+
+	/* -- background -- */
+	.gatorade-herobkgd {
+		background-size: 1850px;
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+	.hidden-992-up {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 992px) {
+
+	/* -- Section - Hero Content -- */
+	.gatorade-herotext h1 {
+		font-size: 38px;
+	}
+
+	.gatorade-herotext h3 {
+		font-size: 30px;
+		padding-bottom: 110px;
+	}
+
+	.gatorade-logos {
+		padding: 20px 0 30px 0;
+		width: 500px;
+	}
+
+	/* -- Section - Countdown -- */
+	#clockdiv {
+		font-size: 75px;
+		padding: 15px;
+	}
+
+	#clockdiv div > span {
+		padding: 10px;
+		width: 100px;
+	}
+
+	.smalltext {
+		padding-top: 30px;
+		font-size: 18px;
+	}
+
+	/* -- background -- */
+	.gatorade-herobkgd {
+		background-size: 1730px;
+	}
+
+	/* -- Section - CTA -- */
+	.gatorade-CTA {
+		height: 330px;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	.hidden-sm-up {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.hidden-sm-down {
+		display: none;
+	}
+
+	/* -- Section - Hero Content -- */
+	.hero-height {
+		height: 780px;
+	}
+
+	.gatorade-herotext h3 {
+		font-size: 28px;
+		padding-bottom: 110px;
+		text-align: center;
+	}
+
+	/* -- Section - Countdown -- */
+	#clockdiv {
+		margin-bottom: 30px;
+	}
+
+	/* -- Section - CTA -- */
+	.gatorade-CTAbkgd {
+		background-image: none;
+	}
+
+	/* -- background -- */
+	.gatorade-herobkgd {
+		background-size: 1570px;
+	}
+
+}
+
+@media screen and (min-width: 681px) {
+	.hidden-680-up {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 680px) {
+
+	.hidden-680-down {
+		display: none;
+	}
+
+	/* -- Section - Hero Content -- */
+	.gatorade-logos {
+		padding: 15px 0 15px 0;
+		width: 400px;
+	}
+
+	.gatorade-herotext h3 {
+		font-size: 24px;
+		padding-bottom: 110px;
+		text-align: center;
+	}
+
+	.gatorade-herotext p {
+		font-size: 18px;
+	}
+
+	/* -- Section - Countdown -- */
+	#clockdiv {
+		border: solid #baff79 2px;
+		font-size: 60px;
+		margin: 15px auto;
+	}
+
+	#clockdiv div > span {
+		padding: 10px;
+		width: 80px;
+	}
+
+	.smalltext {
+		padding-top: 20px;
+		font-size: 16px;
+	}
+
+	/* -- Section - CTA -- */
+	.gatorade-CTAbkgd {
+		background-image: none;
+	}
+
+	/* -- background -- */
+	.gatorade-herobkgd {
+		background-size: 1500px;
+	}
+
+	/* -- Section - Body Copy -- */
+	.gatorade-bodytext p {
+		font-size: 16px;
+	}
+
+	.gatorade-bodytext h3 {
+		font-size: 28px;
+	}
+
+	.gatorade-bodytext h4 {
+		font-size: 20px;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+
+	/* -- Section - Hero Content -- */
+	.hero-height {
+		height: 720px;
+	}
+
+	.gatorade-herotext h1 {
+		font-size: 24px;
+	}
+
+	.gatorade-herotext h3 {
+		font-size: 18px;
+	}
+
+	.gatorade-herotext p {
+		font-size: 16px;
+	}
+
+	/* -- Section - Countdown -- */
+	#clockdiv div > span {
+		border-radius: 10px;
+		font-size: 40px;
+		width: 100px;
+		padding: 5px;
+	}
+
+	.smalltext {
+		padding-top: 15px;
+		font-size: 14px;
+	}
+
+	/* -- background -- */
+	.gatorade-herobkgd {
+		background-size: 1450px;
+	}
+
+}
+
+/* -- production touchups -- */
+
+#gatorade_gcamp_2016_proform label {
+	display: none;
+}
+
+.pf_buttons input[type="submit"] {
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 30px;
+	border-radius: 5px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	//Todo Colors need to go in vars
+	@include gradient(#ff9017, #ff5d00);
+	border: 1px solid #dc5000;
+	border-top-color: #ff9e34;
+	border-left-color: #ff9e34;
+	font-size: 18px;
+	padding: 5px 25px 10px 25px;
+	color: #fff;
+	text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.25);
+	width: 100%;
+	max-width: 250px;
+}
+
+#gatorade_gcamp_2016_proform #tell_their_story {
+	height: 480px;
+}
+
+#gatorade_gcamp_2016_proform .pf_column {
+	padding: 0px;
+}
+
+#gatorade_gcamp_2016_proform hr {
+	margin: 30px;
+}
+
+#gatorade_gcamp_2016_proform input.mt10 {
+	width: 200px;
+}
+
+#gatorade_gcamp_2016_proform .pf_captcha {
+	text-align: right;
+	padding-top: 15px;
+
+}
+
+#gatorade_gcamp_2016_proform select {
+	width: 40%;
+	float: left;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 25px;
+}

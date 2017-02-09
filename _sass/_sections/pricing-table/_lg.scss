@@ -1,0 +1,37 @@
+@include responsive(screen-lg) {
+
+	#Pricing {
+		&.basic {
+			.table-body {
+				.price-box {
+					span:first-child {
+						padding-top: 15px;
+						&.monthly:after {
+							content: 'monthly per team';
+							padding-left: 5px;
+							font: {
+								family: $museo-300;
+								size: 16px;
+								style: italic;
+							}
+						}
+					}
+					span:last-child {
+						padding-bottom: 15px;
+						font: {
+							family: $museo-500;
+							style: italic;
+							size: 13px;
+						}
+						color: #021323;
+						&.yearly:after {
+							content: 'yearly per team';
+							padding-left: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,228 @@
+[id*="CLP"] {
+	.lead {
+		font-family: $open-sans;
+	}
+	&.bg-info {
+		border-top: 1px solid #cfdde9 !important;
+		border-bottom: 1px solid #cfdde9 !important;
+	}
+}
+
+#CLP__Mobile-Ready.bg-info,
+#CLP__Testimomial.bg-info{
+  background: {
+    image: url('#{$img-path}groovepaper--tint.jpg');
+    size: 300px 300px;
+  }
+}
+
+#CLP__Welcome {
+  padding-bottom: 175px;
+  @include responsive(screen-md) {
+    padding-bottom: 275px; 
+  }
+  background: {
+    image: url('#{$img-path}clp_bg.jpg');
+    postion: center top;
+    size: cover;
+  }
+  header {
+    padding: 15px 30px 30px 30px;
+    margin: 0;
+    h1 {
+      font-family: $museo-700;
+    }
+    h1, p {
+      display: block;
+      text-align: center;
+    }
+  }
+  .lead,
+  .btn {
+    font-size: 22px;
+  }
+  .btn {
+    border-color: #fff;
+    margin: 0 auto;
+    padding: 15px 60px;
+    &:hover {
+      background: rgba(255, 255, 255, .15);
+      border-bottom-width: 2px;
+    }
+  }
+}
+
+#CLP__Slider {
+	position: relative;
+	z-index: 100;
+	margin-top: -175px;
+	@include responsive(screen-sm) {
+		margin-top: -300px;
+	}
+	@include responsive(screen-md) {
+		margin-top: -300px;
+	}
+
+	.lead {
+		font-size: 18px;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	.carousel-wrapper {
+		max-width: 1008px;
+		margin: 0 auto;
+		position: relative;
+		padding-bottom: 40px;
+	}
+	.carousel-view {
+		position: absolute;
+		width: 75.29761904761904761904761904761904761904761904761904761904761905%;
+		top: 14px;
+		@include responsive(screen-md) {
+			top: 30px;
+		}
+		left: 12.35119047619047619047619047619047619047619047619047619047619048%;
+		overflow: hidden;
+		padding-bottom: 125px;
+	}
+	.carousel-indicators {
+		bottom: 7%;
+		display: none;
+		@include responsive(screen-xs) {
+			bottom: -40%;
+			display: block;
+		}
+		@include responsive(screen-sm) {
+			bottom: -120px;
+		}
+		li {
+			border-width: 3px;
+			border-color: #7d8e9f;
+			height: 15px;
+			width: 15px;
+			&.active {
+				border-color: #476c8d;
+				background: #476c8d;
+			}
+		}
+	}
+}
+
+#CLP__Mobile-Ready {
+	h3 {
+		font-size: 38px;
+		font-family: $museo-900;
+		margin-bottom: 15px;
+		line-height: 1.2;
+		@include responsive(screen-md) {
+			margin-top: 125px;
+		}
+	}
+	.lead {
+		font-size: 18px;
+		font-weight: 500;
+		color: #0b1e2d;
+	}
+	li {
+		font-size: 16px;
+	}
+	.col-md-4 {
+		@include responsive(screen-md) {
+			margin-right: -60px;
+		}
+	}
+}
+
+#CLP__benefits {
+  img,
+  h3,
+  p {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  img {
+    max-width: 130px; 
+  }
+  h3 {
+    font-family: $museo-700;
+    font-size: 24px;
+    color: #1d3447;
+    border-bottom: 1px solid #8e9fad;
+    padding-bottom: 10px;
+  }
+  .row {
+    @inlude responsive(screen-md) {
+      padding: 10px 5%; 
+    }
+  }
+  .col-base-12 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .lead {
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .btn {
+    display: block;
+    padding: 15px 30px; 
+    font-size: 18px;
+    text-shadow: none;
+    position: relative;
+    .btn__details {
+      display: none;
+      li {
+        text-align: left;
+        color: #637b91;
+        font-size: 16px;
+        font-family: $open-sans;
+      }
+    }
+    .btn__close {
+      font-size: 0;
+      color: transparent;
+      height: 30px;
+      width: 30px;
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: url('#{$img-path}close.png') center center;
+      background-size: 30px 30px; 
+      opacity: 1;
+    }
+    .btn__close {
+      opacity: 0; 
+    }
+  }
+  .btn[data-toggle="open"] {
+    &:hover {
+      background: #fff;
+      border: 2px solid $brand-primary;
+    }
+    .btn__text {
+      opacity: 0; 
+    }
+    .btn__details {
+      display: block;
+    }
+    .btn__close {
+      opacity: 1;
+    }
+  }
+}
+
+#CLP__Testimomial {
+	.vertical-align blockquote {
+		height: 150px;
+		cite {
+			padding-top: 10px;
+			font-size: 18px;
+		}
+	}
+}

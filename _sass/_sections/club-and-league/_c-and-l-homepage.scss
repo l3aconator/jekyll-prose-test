@@ -1,0 +1,291 @@
+.cl-homepage {
+
+	&.hero {
+		background: url('https://www.teamsnap.com/assets/images/content/c-and-l-bg-image.jpg') no-repeat center;
+		background-size: contain;
+	}
+
+	// CREDIT TO CSS TRICKS
+	.video-box {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+		border-radius: 30px !important;
+	}
+
+	.video-box iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 30px !important;
+		box-shadow: 0px 0px 14px 0px rgba(9, 54, 97, 0.46);
+
+		&:active,
+		&:hover {
+			border-radius: 30px !important;
+		}
+	}
+	// END CREDIT TO CSS TRICKS
+
+	.cl-homepage-bullet-list {
+
+		.container {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.row {
+			margin: 0;
+		}
+
+		&.bg-info {
+			padding-bottom: 0;
+		}
+
+		ul {
+
+			li {
+				padding-left: 40px !important;
+				color: $brand-primary;
+				font-size: 1.25em;
+				line-height: 34px;
+				padding-left: 10px;
+
+				&:before {
+					content: '✓' !important;
+					color: $brand-success !important;
+					font-size: 1.25em !important;
+				}
+			}
+		}
+	}
+}
+
+.cl-homepage-features {
+
+	.cl-homepage-features-header {
+		min-height: 350px;
+	}
+
+	.cl-homepage-feature-main-heading {
+		margin-top: 30px;
+		color: $brand-primary;
+	}
+
+	.cl-homepage-feature-main-paragraph {
+		font-size: 1.25em;
+		margin-bottom: 20px;
+	}
+
+	.cl-homepage-features-header-imgs {
+		position: relative;
+
+		img {
+			position: absolute;
+			width: 25%;
+		}
+
+		.img-1 {
+			top: 40px;
+			left: 0;
+		}
+
+		.img-2 {
+			top: 0;
+			right: 0;
+		}
+	}
+
+	.cl-feature-list {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		display: block;
+	}
+
+	.cl-feature-list-item {
+		padding-left: 0px !important;
+		display: block;
+
+		h3 {
+			cursor: pointer;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+
+			.cl-feature-list-icon-box {
+				background: $brand-primary;
+				transform: scale(1.15);
+			}
+
+			.cl-feature-list-icon {
+				color: white;
+			}
+		}
+
+		&:before {
+			display: none; // Remove bullet
+		}
+	}
+
+	.cl-feature-list-icon-box {
+		position: relative;
+		width: 150px;
+		height: 150px;
+		border-radius: 100%;
+		background: white;
+		border: 9px solid $brand-primary;
+		transition: all 400ms ease;
+		box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.30);
+		cursor: pointer;
+	}
+
+	.cl-feature-list-icon {
+		position: absolute;
+		font-size: 5em;
+		text-align: center;
+		color: $brand-primary;
+		transition: color 400ms ease;
+		top: 46%;
+		left: 20%;
+		display: block;
+	}
+
+	a.cl-feature-list-cta {
+		display: block;
+		padding-top: 15px;
+		color: $gray;
+		font-style: italic;
+		text-decoration: underline;
+		margin-bottom: 20px;
+		transition: color 400ms ease;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: lighten($gray, 15%);
+
+		}
+	}
+}
+
+.cl-homepage-testimonials {
+	background: $brand-success;
+
+	h3 {
+		color: $brand-primary-dark;
+	}
+
+	.cl-homepage-testimonial-item {
+		color: white;
+		font-family: $museo-500;
+		font-size: 1.25em;
+
+		.cl-homepage-testimonial-author {
+			display: block;
+			padding-top: 15px;
+			font-style: italic;
+			font-family: $open-sans;
+			font-size: .675em;
+		}
+	}
+}
+
+//Media Queries
+
+@media (max-width: 1024px) {
+	.cl-homepage-features-header-imgs {
+		position: relative;
+
+		img {
+			position: absolute;
+			width: 25%;
+			display: block;
+		}
+
+		.img-1 {
+			top: 10px !important;
+			left: 0;
+		}
+
+		.img-2 {
+			top: 0;
+			right: 0;
+		}
+	}
+
+	.cl-homepage-feature-main-heading {
+		margin-top: 20% !important;
+	}
+
+	.cl-homepage-feature-main-paragraph {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: $screen-md) {
+
+	.cl-feature-list-icon-box {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px;
+	}
+
+	.cl-feature-list-item {
+		text-align: center;
+	}
+
+	.cl-homepage-feature-main-paragraph {
+		font-size: .875em;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: $screen-sm) {
+	.cl-homepage-bullet-list {
+
+		ul {
+
+			li {
+				font-size: 1em !important;
+				line-height: 22px !important;
+			}
+		}
+	}
+
+	.cl-homepage-features {
+
+		.container:nth-child(2) {
+			padding-top: 0px;
+		}
+
+		.cl-homepage-features-header {
+			min-height: 250px;
+
+			.container {
+				padding-bottom: 0px;
+			}
+		}
+
+		.cl-homepage-feature-main-paragraph {
+			font-size: 1em;
+			margin-bottom: 20px;
+		}
+	}
+
+	.cl-homepage-testimonials {
+
+		.cl-homepage-testimonial-item {
+			font-size: 1.1em;
+			padding-bottom: 10px;
+
+			.cl-homepage-testimonial-author {
+				font-size: .675em;
+			}
+		}
+	}
+}

@@ -1,0 +1,160 @@
+.wp-caption {
+	width: 510px;
+	background: #fff;
+	padding: 15px;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 3px #eee;
+	.wp-caption-text {
+		font-size: 13px;
+		color: #444;
+		padding: 15px 0 0 0;
+		line-height: 18px;
+		margin-bottom: 0;
+	}
+}
+
+#content .entry .gallery {
+	border-bottom: 4px solid #ddd;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	.gallery-item {
+		width: 510px;
+		background: #fff;
+		padding: 15px;
+		border: 1px solid #ddd;
+		margin-bottom: 20px;
+		border-radius: 8px;
+		box-shadow: 0 0 3px #eee;
+		width: 31%;
+		margin: 1%;
+		dd {
+			font-size: 12px;
+			color: #444;
+			padding: 15px 0 0 0;
+			line-height: 18px;
+			margin-bottom: 0;
+			text-align: left;
+		}
+	}
+}
+
+.listing {
+	ul {
+		.post {
+			border-bottom: 1px solid $gray-lighter;
+			padding-bottom: $grid-gutter-width;
+			margin-bottom: ($grid-gutter-width * 2);
+			& > * {
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+			&:last-child {
+				border-bottom: none;
+				margin-bottom: 0;
+			}
+			& > .postmetadata {
+				margin-bottom: 0;
+			}
+			.entry {
+				border-top: none;
+				margin-top: 0;
+			}
+		}
+	}
+	.author,
+	.error {
+		color: $gray-dark;
+		span {
+			color: $gray-light;
+		}
+	}
+	.author-info {
+		padding-bottom: $grid-gutter-width;
+		margin-bottom: $grid-gutter-width;
+		border-bottom: 1px solid $gray-lighter;
+	}
+}
+
+.post {
+	.entry {
+		padding-top: 15px;
+		h2 {
+			padding: 15px;
+			border-left: 4px solid #ddd;
+			margin: 30px 30px 30px 0;
+			font-size: 32px;
+			line-height: 1.35;
+			font-family: "MuseoSansRounded100Regular";
+			padding-left: 30px;
+			clear: both;
+		}
+		ul {
+			@extend .bulleted;
+		}
+		.related_post.wp_rp {
+			padding-left: 0;
+			li:before {
+				content: '';
+			}
+		}
+	}
+}
+
+.pagination {
+	clear: both;
+	padding: 20px 0;
+	position: relative;
+	font-size: 11px;
+	line-height: 13px;
+	span,
+	a {
+		display: block;
+		float: left;
+		margin: 0 3px;
+		padding: 10px 15px 10px 15px;
+		text-decoration: none;
+		width: auto;
+		color: $brand-primary;
+		background: $gray-lighter;
+		border-radius: 5px;
+		box-shadow: 0 1px 1px rgba($brand-primary-dark, .5);
+	}
+	span:first-child {
+		background: $gray-lighter;
+	}
+	a:hover {
+		color: #fff;
+		background: $brand-primary-dark;
+	}
+	.current {
+		background: $brand-primary-dark;
+		color: #fff;
+	}
+}
+
+#respond,
+.related_post_title {
+	padding-top: 30px;
+	border-top: 1px solid #eee;
+	margin-top: 30px;
+}
+
+#comment_table {
+	margin-bottom: 25px;
+	tr {
+		height: 60px;
+		th {
+			padding: 0 15px;
+		}
+		.smalltext {
+			padding-left: 15px;
+			font-size: 12px;
+		}
+	}
+}
+
+.wp_rp_wrap {
+	padding-bottom: 15px;
+}

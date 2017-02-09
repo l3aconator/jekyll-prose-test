@@ -1,0 +1,102 @@
+<header id="Header" class="navbar navbar-default" role="navigation" aria-labelledby="Slidedown Help Navigation">
+	<section class="primary" role="navigation" aria-labelledby="Main Navigation">
+		<div class="container">
+			<div class="row">
+				<div class="logo-block">
+					<a class="logo navbar-header navbar-left navbar-brand" href="/">
+						<img class="main-logo" src="/assets/img/logo.png" alt="TeamSnap Logo" />
+					</a>
+				</div>
+				<a href="https://go.teamsnap.com/login/signin" class="hidden-md hidden-lg hidden-xl mobile-login-btn" aria-label="TeamSnap Login Button">Log In</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" role="menu" aria-hidden="true">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<nav role="menubar" class="main-nav">
+					<ul class="nav navbar navbar-nav navbar-right navbar-collapse collapse text-center">
+						<li role="menuitem"><a href="/teams" {if segment_1=="teams"}class="sub-parent"{/if}>Teams</a></li>
+						<li role="menuitem"><a href="/leagues-and-clubs" {if segment_1=="leagues-and-clubs"}class="sub-parent active"{/if}>Clubs &amp; Leagues</a></li>
+						<li role="menuitem"><a href="/community" {if segment_1=="community"}class="sub-parent active" {/if}>Community</a></li>
+						<li role="menuitem"><a href="/about" {if segment_1=="about"}class="sub-parent active"{/if}>About</a></li>
+						<li role="menuitem"><a href="/contact" {if segment_1=="contact"}class="active"{/if}>Contact</a></li>
+						<li role="menuitem">
+							<div class="mt25-md mt5 pl15-md" >
+								<a href="https://go.teamsnap.com/" class="menuitem-link">
+									<button role="button" type="button" class="btn btn-primary" aria-labelledby="TeamSnap Login Button">LOG IN</button>
+								</a>
+							</div>
+						</li>
+						<li role="menuitem">
+							<div class="mt25-md mt5 pl15-md hidden-xs hidden-sm">
+								<a href="https://go.teamsnap.com/signup/missing_email" class="menuitem-link">
+									<button role="button" type="button" aria-labelledby="TeamSnap Sign Up Button" class="btn btn-success">SIGN UP</button>
+								</a>
+							</div>
+							<div class="mt25-md mt0 mb10 pl15-md hidden-md hidden-lg hidden-xl">
+								<a href="https://go.teamsnap.com/signup/missing_email" class="menuitem-link">
+									<button type="button" class="btn btn-success" aria-label="TeamSnap Sign Up Button">SIGN UP</button>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</section>
+	<div class="secondary bg-info helpnav">
+		<div id="Utility" class="container">
+			<div id="Utility_Heading" class="row">
+				<ul class="navbar-right list-inline" id="js-helpnav">
+					<a href="#Utility_Panel" data-toggle="collapse" data-parent="#Utility" class="text-muted small close">&times;</a>
+					<li><a href="#Utility_Panel" data-toggle="collapse" data-parent="#Utility" class="text-muted small open">Help &amp; Support</a></li>
+				</ul>
+				<ul class="navbar-left list-inline">
+					<li><a href="https://www.facebook.com/TeamSnap" class="text-muted" title="facebook"><span class="icon-facebook"></span></a></li>
+					<li><a href="https://twitter.com/teamsnap" class="text-muted" title="twitter"><span class="icon-twitter-3"></span></a></li>
+					<li><a href="//www.pinterest.com/teamsnaphq/" class="text-muted" title="pintrest"><span class="icon-pinterest"></span></a></li>
+					<li><a href="https://plus.google.com/u/0/+Teamsnapapp" class="text-muted" title="gplus"><span class="icon-google__x2B_"></span></a></li>
+					<li><a href="https://www.youtube.com/user/TeamsnapHQ" class="text-muted" title="youtube"><span class="icon-youtube"></span></a></li>
+				</ul>
+			</div>
+			<div id="Utility_Panel" class="utility-collapse panel-collapse collapse row">
+				<div class="panel-body">
+					<div class="col-md-4 mt0">
+						<h4>Help &amp; Support</h4>
+						<ul class="col-md-6 small">
+							<li><a href="https://helpme.teamsnap.com/hc/en-us/sections/203972077-Roster">Players &amp; Rosters</a></li>
+							<li><a href="https://helpme.teamsnap.com/hc/en-us/sections/200936040-Schedule">Schedules</a></li>
+							<li><a href="https://helpme.teamsnap.com/hc/en-us/sections/203978277-Availability">Player Availability</a></li>
+							<li><a href="https://helpme.teamsnap.com/hc/en-us/sections/203978287-Tracking">Tracking</a></li>
+							<li><a href="https://helpme.teamsnap.com/hc/en-us/sections/203972107-Payments">Payments</a></li>
+							<li><a href="https://helpme.teamsnap.com/hc/en-us/sections/204013648-Statistics">Statistics</a></li>
+							<li><a href="https://helpme.teamsnap.com/hc/en-us/sections/206206108-Media">Photos &amp; Files</a></li>
+						</ul>
+						<ul class="col-md-6 small">
+							<li><a href="https://helpme.teamsnap.com/hc/en-us/sections/203972037-Messages">Messages</a></li>
+							<li><a href="https://helpme.teamsnap.com/hc/en-us/sections/203972167-Manager">Customization</a></li>
+							<li><a href="https://helpme.teamsnap.com/hc/en-us/sections/206159408-General">General FAQs</a></li>
+							<li><a href="https://helpme.teamsnap.com/hc/en-us/sections/200936050-Account-Settings">Accounts</a></li>
+							<li><a href="https://helpme.teamsnap.com/hc/en-us/sections/200847004-Random">Random Questions</a></li>
+							<li><a href="https://helpme.teamsnap.com/hc/en-us">Visit our Help Site</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h3>Looking for Your Team?</h3>
+						<p>Your manager must send you an email invitation through TeamSnap. Check if an invite has been sent.</p>
+						<a href="https://go.teamsnap.com/login/find_my_team">
+							<button type="button" class="btn btn-primary btn-sm mt5">Let's Go Find Your Team</button>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<h3>Forgot Username or Password</h3>
+						<p>No problem! Just enter your email address and we'll email your account information. <span class="small"><em>Make sure this is the email address you signed up with.</em></span></p>
+						<a href="https://go.teamsnap.com/login/forgot_password">
+							<button type="button" class="btn btn-primary btn-sm mt5">Find my Username/Password</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

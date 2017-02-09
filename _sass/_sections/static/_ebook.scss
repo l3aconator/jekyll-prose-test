@@ -1,0 +1,278 @@
+.ebook-page {
+
+    .section-pad {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .ebook-hero {
+        background-image: linear-gradient(-180deg, #236BAD 26%, #0A253D 100%);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(/assets/images/content/ebook-bg-image.jpg);
+
+        .ebook-image {
+            margin-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .ebook-versions {
+            border: 1px solid #43729D;
+            display: block;
+            padding: 10px;
+            max-width: 302px;
+            border-radius: 5px;
+            color: #43729D;
+            margin-top: 30px;
+
+            .ebook-versions-icon-list {
+                display: inline;
+                width: 40%;
+                float: left;
+                margin-bottom: 0;
+
+                li {
+                    padding-left: 0 !important;
+
+                    &:before {
+                        content: '' !important;
+                    }
+                }
+
+                .ebook-versions-icon {
+                    font-size: 2em;
+                    padding-right: 10px;
+                    display: inline-block;
+                    margin-top: 10px;
+
+                    &:last-child {
+                        padding-right: 0px;
+                    }
+                }
+            }
+
+            .ebook-desc {
+                font-weight: bold;
+            }
+
+            .ebook-versions-avail {
+                margin-top: 10px;
+                font-size: 14px;
+                width: 60%;
+                float: left;
+            }
+        }
+
+        .ebook-form {
+            padding: 30px;
+            background-color: white;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 32px 10px rgba(15,51,84,0.34);
+
+            label {
+                margin-bottom: 20px;
+
+                .form-label {
+                    font-size: 1.25em;
+                    color: $brand-primary;
+                    display: inline-block;
+                    margin-bottom: 5px;
+                    font-family: $museo-700;
+                }
+            }
+
+            [data-bv-validator="notEmpty"] {
+                color: $brand-danger;
+            }
+        }
+
+        .ebook-retry {
+            margin-top: 30px;
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+
+        .ebook-download-desc {
+            font-size: $font-size-h4;
+            margin-top: 30px;
+
+
+            .ebook-title-inline {
+                display: inline;
+                font-weight: bold;
+                font-style: italic;
+            }
+        }
+    }
+
+    .ebook-cta {
+        background-color: #082035;
+
+        .video-box {
+            margin-left: 90px;
+            margin-right: 90px;
+            border-radius: 20px !important;
+        }
+
+        .video-box iframe {
+    		border-radius: 20px !important;
+    		box-shadow: 0px 0px 14px 0px rgba(9, 54, 97, 0.46);
+
+    		&:active,
+    		&:hover {
+    			border-radius: 20px !important;
+    		}
+    	}
+    }
+
+    .ebook-footer {
+        background-color: #FAFAFC;
+        color: $gray;
+
+        .brought-to-text {
+            font-family: $museo-700;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: .1em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        address {
+            margin-top: 10px;
+        }
+
+        h5 {
+            font-family: $museo-700;
+            font-weight: bold;
+            color: $brand-primary;
+        }
+
+        ul {
+            li {
+                a {
+                    color: $gray;
+                    transition: color 300ms ease;
+                    text-decoration: none;
+                    font-size: 14px;
+
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        color: darken($gray, 20%);
+                        text-decoration: underline !important;
+                    }
+                }
+            }
+        }
+
+        .social {
+
+            li {
+
+                a {
+                    color: $brand-primary;
+                    background-color: white;
+                    height: 25px;
+                    width: 25px;
+                    text-align: center;
+                    display: block;
+                    border-radius: 3px;
+                    transition: background-color .25s ease-in-out;
+                    font-size: 16px;
+
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        color: darken($brand-primary, 20%) !important;
+                        background-color: darken(white, 10%);
+                    }
+                }
+            }
+        }
+
+        .what-is-desc {
+            color: $brand-primary-dark;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (max-width: $screen-tablet) {
+
+    .ebook-page {
+
+        .section-pad {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .ebook-hero {
+
+            .ebook-versions {
+                max-width: 400px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .ebook-cta {
+
+            .video-box {
+                margin-top: 20px;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-phone) {
+
+    .ebook-page {
+
+        .section-pad {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .ebook-hero {
+
+            .ebook-versions {
+                padding: 5px;
+
+                .ebook-versions-icon-list {
+                    float: none;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    margin-bottom: 0;
+
+                    .ebook-versions-icon {
+                        font-size: 1.25em;
+                        padding-right: 5px;
+                        margin-top: 5px;
+                        padding-bottom: 0px;
+
+                        &:last-child {
+                            padding-right: 0px;
+                        }
+                    }
+                }
+
+                .ebook-versions-avail {
+                    text-align: center;
+                    float: none;
+                    display: block;
+                    width: 100%;
+                    margin-top: 5px;
+                }
+            }
+
+
+        }
+    }
+}

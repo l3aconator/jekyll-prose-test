@@ -1,0 +1,44 @@
+.container header.podcast {
+	position: relative;
+	border: 1px solid lighten($brand-primary, 47.5%);
+	margin: 0 $grid-padding-width $grid-gutter-width $grid-padding-width;
+	box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.25);
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	.custom-md {
+		&:first-child {
+			display: none;
+		}
+		&:last-child {
+			padding-bottom: $grid-padding-width;
+			& > * {
+				padding: 0 $grid-gutter-width;
+			}
+		}
+		//media queries for .custom-md
+		@include responsive(screen-md) {
+			&:first-child {
+				width: 35%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow: hidden;
+				display: block;
+				img {
+					position: absolute;
+					height: 100%;
+					width: auto;
+					max-width: 900%;
+					top: 0;
+					left: 0;
+				}
+			}
+			&:last-child {
+				width: 65%;
+				float: right;
+			}
+		}
+	}
+}

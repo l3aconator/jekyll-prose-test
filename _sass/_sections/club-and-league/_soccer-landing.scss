@@ -1,0 +1,38 @@
+.features-summary-text-block {
+	padding-left: 40px;
+	padding-bottom: 15px;
+	margin-top: -40px;
+
+	@media (min-width: $screen-xs-min) {
+		padding-left: 60px;
+		margin-top: -66px;
+	}
+
+}
+
+.features-icon-link {
+	text-decoration: none;
+	color: $brand-primary;
+
+	&:hover {
+		color: $brand-primary-dark;
+	}
+}
+
+.features-heading {
+	a {
+		color: $brand-primary;
+		&:hover {
+			color: $brand-primary-dark;
+		}
+	}
+
+}
+
+.features-icon {
+	font-size: 25px;
+	@media (min-width: $screen-xs-min) {
+		font-size: 50px;
+	}
+
+}
